@@ -1,0 +1,56 @@
+/* ==========================================
+   L&G TECNOLOGIA
+   VARIABLES.CSS
+========================================== */
+
+:root {
+
+    /* ===== Cores ===== */
+
+    --primary: #1E7CC8;
+    --primary-dark: #0C2F61;
+
+    --secondary: #0F172A;
+
+    --white: #FFFFFF;
+
+    --light: #F7F9FC;
+
+    --gray-100: #F1F5F9;
+    --gray-200: #E2E8F0;
+    --gray-300: #CBD5E1;
+    --gray-500: #64748B;
+    --gray-700: #334155;
+    --gray-900: #0F172A;
+
+    --text: #334155;
+
+    /* ===== Tipografia ===== */
+
+    --font: 'Poppins', sans-serif;
+
+    /* ===== Tamanhos ===== */
+
+    --h1: 56px;
+    --h2: 42px;
+    --h3: 30px;
+
+    --text-lg: 20px;
+    --text-md: 18px;
+    --text-sm: 16px;
+
+    /* ===== Espaçamentos ===== */
+
+    --section-padding: 100px;
+
+    --radius: 10px;
+
+    --transition: .3s ease;
+
+    /* ===== Sombras ===== */
+
+    --shadow:
+
+        0 10px 30px rgba(0, 0, 0, .08);
+
+}
