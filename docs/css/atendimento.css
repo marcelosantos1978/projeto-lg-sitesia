@@ -1,0 +1,564 @@
+/* ==========================================================
+   PÁGINA - SOLICITAR ATENDIMENTO
+========================================================== */
+
+
+/* ==========================================
+   HERO DA PÁGINA
+========================================== */
+
+.request-hero {
+    padding: 70px 0;
+    background:
+        linear-gradient(135deg,
+            rgba(238, 246, 253, .96),
+            rgba(255, 255, 255, 1));
+}
+
+.request-hero-grid {
+    display: grid;
+    grid-template-columns: 1fr 1.15fr;
+    gap: 55px;
+    align-items: center;
+}
+
+.request-hero-content {
+    width: 100%;
+}
+
+.request-hero-content h1 {
+    margin: 18px 0 20px;
+
+    color: var(--secondary);
+
+    font-size: 46px;
+    line-height: 1.12;
+}
+
+.request-hero-content p {
+    max-width: 600px;
+
+    color: var(--gray-500);
+
+    font-size: 17px;
+    line-height: 1.8;
+}
+
+.request-hero-image {
+    width: 100%;
+}
+
+.request-hero-image img {
+    width: 100%;
+    display: block;
+
+    border-radius: 22px;
+
+    box-shadow:
+        0 25px 55px rgba(15, 39, 71, .16),
+        0 10px 25px rgba(0, 0, 0, .10);
+}
+
+
+/* ==========================================
+   SEÇÃO PRINCIPAL
+========================================== */
+
+.request-section {
+    padding: 80px 0 100px;
+    background: #ffffff;
+}
+
+.request-container {
+    display: grid;
+    grid-template-columns: .85fr 1.35fr;
+    gap: 70px;
+    align-items: start;
+}
+
+
+/* ==========================================
+   COLUNA DE INFORMAÇÕES
+========================================== */
+
+.request-info {
+    position: sticky;
+    top: 120px;
+}
+
+.request-info h2 {
+    margin: 18px 0 20px;
+
+    color: var(--secondary);
+
+    font-size: 34px;
+    line-height: 1.25;
+}
+
+.request-info>p {
+    margin-bottom: 30px;
+
+    color: var(--gray-500);
+
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* BENEFÍCIOS */
+
+.request-benefits {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    margin-bottom: 35px;
+}
+
+.request-benefits div {
+    display: flex;
+    align-items: flex-start;
+    gap: 12px;
+
+    color: var(--secondary);
+
+    font-size: 14px;
+    line-height: 1.5;
+}
+
+.request-benefits i {
+    width: 24px;
+    height: 24px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: var(--primary);
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 10px;
+}
+
+
+/* CONTATO RÁPIDO */
+
+.request-contact {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    padding: 20px;
+
+    background: var(--light);
+
+    border: 1px solid var(--gray-200);
+    border-radius: 14px;
+}
+
+.request-contact>i {
+    width: 48px;
+    height: 48px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex-shrink: 0;
+
+    background: #25D366;
+    color: #ffffff;
+
+    border-radius: 50%;
+
+    font-size: 24px;
+}
+
+.request-contact div {
+    display: flex;
+    flex-direction: column;
+}
+
+.request-contact strong {
+    margin-bottom: 4px;
+
+    color: var(--secondary);
+
+    font-size: 14px;
+}
+
+.request-contact a {
+    color: var(--primary);
+
+    font-size: 15px;
+    font-weight: 600;
+}
+
+
+/* ==========================================
+   FORMULÁRIO
+========================================== */
+
+.request-form-wrapper {
+    width: 100%;
+}
+
+.request-form {
+    padding: 40px;
+
+    background: #ffffff;
+
+    border: 1px solid var(--gray-200);
+    border-radius: 20px;
+
+    box-shadow:
+        0 18px 45px rgba(0, 0, 0, .07);
+}
+
+.request-form>h2 {
+    margin-bottom: 6px;
+
+    color: var(--secondary);
+
+    font-size: 30px;
+}
+
+.form-intro {
+    margin-bottom: 30px;
+
+    color: var(--gray-500);
+
+    font-size: 14px;
+}
+
+
+/* ==========================================
+   TÍTULOS INTERNOS
+========================================== */
+
+.form-section-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin: 32px 0 18px;
+    padding-bottom: 10px;
+
+    border-bottom: 1px solid var(--gray-200);
+
+    color: var(--secondary);
+
+    font-size: 16px;
+    font-weight: 600;
+}
+
+.form-section-title:first-of-type {
+    margin-top: 0;
+}
+
+.form-section-title i {
+    color: var(--primary);
+}
+
+
+/* ==========================================
+   GRID DO FORMULÁRIO
+========================================== */
+
+.form-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    margin-bottom: 7px;
+
+    color: var(--secondary);
+
+    font-size: 14px;
+    font-weight: 500;
+}
+
+
+/* ==========================================
+   CAMPOS
+========================================== */
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+
+    padding: 13px 14px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 14px;
+
+    color: var(--secondary);
+
+    background: #ffffff;
+
+    border: 1px solid #d8e0e8;
+    border-radius: 9px;
+
+    outline: none;
+
+    transition: .25s;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 150px;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    border-color: var(--primary);
+
+    box-shadow:
+        0 0 0 3px rgba(30, 124, 200, .10);
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #9aa8b7;
+}
+
+
+/* ==========================================
+   ARQUIVO
+========================================== */
+
+.form-group input[type="file"] {
+    padding: 11px;
+
+    background: var(--light);
+}
+
+.form-group small {
+    margin-top: 7px;
+
+    color: var(--gray-500);
+
+    font-size: 12px;
+    line-height: 1.5;
+}
+
+
+/* ==========================================
+   CONSENTIMENTO
+========================================== */
+
+.form-consent {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+
+    margin: 30px 0 25px;
+}
+
+.form-consent input {
+    margin-top: 4px;
+}
+
+.form-consent label {
+    color: var(--gray-500);
+
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+
+/* ==========================================
+   BOTÃO ENVIAR
+========================================== */
+
+.form-submit {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+
+    border: none;
+
+    cursor: pointer;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+}
+
+.form-submit i {
+    font-size: 15px;
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE - TABLET
+========================================================== */
+
+@media (min-width:769px) and (max-width:1024px) {
+
+    .request-hero-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+    }
+
+    .request-hero-content {
+        max-width: 700px;
+    }
+
+    .request-hero-image {
+        max-width: 760px;
+        margin: 0 auto;
+    }
+
+    .request-container {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .request-info {
+        position: static;
+        max-width: 760px;
+    }
+
+    .request-form {
+        padding: 35px;
+    }
+
+}
+
+
+/* ==========================================================
+   RESPONSIVIDADE - CELULAR
+========================================================== */
+
+@media (max-width:768px) {
+
+    .request-hero-grid {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .request-hero-content h1 {
+        font-size: 34px;
+    }
+
+    .request-hero-image img {
+        border-radius: 16px;
+    }
+
+    .request-hero {
+        padding: 60px 0 45px;
+    }
+
+    .request-hero h1 {
+        font-size: 36px;
+    }
+
+    .request-hero p {
+        font-size: 16px;
+    }
+
+    .request-section {
+        padding: 55px 0 70px;
+    }
+
+    .request-container {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    .request-info {
+        position: static;
+        width: 100%;
+    }
+
+    .request-info h2 {
+        font-size: 30px;
+    }
+
+    .request-form {
+        padding: 25px 20px;
+        border-radius: 16px;
+    }
+
+    .request-form>h2 {
+        font-size: 25px;
+    }
+
+    .form-grid {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+
+    .request-contact {
+        padding: 16px;
+    }
+
+}
+
+/* ==========================================
+   STATUS DO FORMULÁRIO
+========================================== */
+
+.form-status{
+    display:none;
+    margin-top:18px;
+}
+
+.form-status.success,
+.form-status.error{
+    display:flex;
+    align-items:flex-start;
+    gap:12px;
+
+    padding:16px 18px;
+
+    border-radius:12px;
+
+    font-size:13px;
+    line-height:1.6;
+}
+
+.form-status i{
+    margin-top:3px;
+    font-size:20px;
+}
+
+.form-status div{
+    display:flex;
+    flex-direction:column;
+}
+
+.form-status strong{
+    margin-bottom:2px;
+    font-size:14px;
+}
+
+.form-status.success{
+    background:#eefbf3;
+    border:1px solid #bde7ca;
+    color:#176b37;
+}
+
+.form-status.error{
+    background:#fff3f3;
+    border:1px solid #f0c2c2;
+    color:#a52a2a;
+}

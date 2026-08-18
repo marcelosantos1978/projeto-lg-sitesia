@@ -801,3 +801,17 @@ nav a:hover{
 #contato{
     scroll-margin-top:70px;
 }
+
+/* ==========================================
+   CORREÇÃO DO BOTÃO FALE CONOSCO - HEADER
+========================================== */
+
+header .btn{
+    position:relative;
+    z-index:10;
+    display:inline-flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    pointer-events:auto;
+}

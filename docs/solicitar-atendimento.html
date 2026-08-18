@@ -1,0 +1,798 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Solicitar Atendimento | L&G Tecnologia</title>
+
+    <meta name="description"
+        content="Solicite atendimento técnico, orçamento ou suporte especializado da L&G Tecnologia.">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS DO SITE -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!-- CSS DESTA PÁGINA -->
+    <link rel="stylesheet" href="css/atendimento.css">
+
+</head>
+
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="index.html#inicio" class="logo">
+
+                <img src="images/logo/logo-lg.png" alt="L&G Tecnologia">
+
+            </a>
+
+            <nav>
+
+                <ul>
+
+                    <li>
+                        <a href="index.html#inicio">
+                            Início
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#servicos">
+                            Serviços
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#sites">
+                            Sites
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#sobre">
+                            Sobre
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="index.html#contato">
+                            Contato
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <a href="#formulario" class="btn">
+                Fale Conosco
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         APRESENTAÇÃO
+    =========================================== -->
+
+    <main>
+
+        <section class="request-hero">
+
+            <div class="container request-hero-grid">
+
+                <div class="request-hero-content">
+
+                    <span class="section-badge">
+                        SOLICITAR ATENDIMENTO
+                    </span>
+
+                    <h1>
+                        Conte para nós como podemos ajudar.
+                    </h1>
+
+                    <p>
+                        Preencha as informações abaixo para que a equipe da
+                        L&amp;G Tecnologia possa entender sua necessidade e
+                        oferecer o atendimento mais adequado.
+                    </p>
+
+                </div>
+
+                <div class="request-hero-image">
+
+                    <img src="images/atendimento/hero-atendimento.png"
+                        alt="Manutenção e suporte em Tecnologia da Informação">
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+             FORMULÁRIO
+        =========================================== -->
+
+        <section class="request-section" id="formulario">
+
+            <div class="container request-container">
+
+                <!-- Informações -->
+                <div class="request-info">
+
+                    <span class="section-badge">
+                        ATENDIMENTO PERSONALIZADO
+                    </span>
+
+                    <h2>
+                        Precisamos conhecer um pouco da sua necessidade.
+                    </h2>
+
+                    <p>
+                        Quanto mais informações você fornecer, mais rápido
+                        poderemos analisar sua solicitação e direcionar o
+                        atendimento.
+                    </p>
+
+                    <div class="request-benefits">
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Atendimento empresarial e particular
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Suporte remoto e presencial
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Orçamentos e projetos personalizados
+                        </div>
+
+                        <div>
+                            <i class="fa-solid fa-check"></i>
+                            Análise de infraestrutura e equipamentos
+                        </div>
+
+                    </div>
+
+                    <div class="request-contact">
+
+                        <i class="fa-brands fa-whatsapp"></i>
+
+                        <div>
+
+                            <strong>
+                                Precisa de atendimento mais rápido?
+                            </strong>
+
+                            <a href="https://wa.me/5567992825117" target="_blank" rel="noopener noreferrer">
+
+                                (67) 99282-5117
+
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Formulário -->
+                <div class="request-form-wrapper">
+
+                    <form class="request-form" action="https://formspree.io/f/xjybpjrb" method="POST">
+
+                        <h2>
+                            Solicitação de Atendimento
+                        </h2>
+
+                        <p class="form-intro">
+                            Os campos marcados com * são obrigatórios.
+                        </p>
+
+
+                        <!-- DADOS DO CLIENTE -->
+
+                        <div class="form-section-title">
+                            <i class="fa-solid fa-user"></i>
+                            Dados do solicitante
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="nome">
+                                    Nome *
+                                </label>
+
+                                <input type="text" id="nome" name="nome" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="empresa">
+                                    Empresa
+                                </label>
+
+                                <input type="text" id="empresa" name="empresa">
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="email">
+                                    E-mail *
+                                </label>
+
+                                <input type="email" id="email" name="email" required>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="whatsapp">
+                                    WhatsApp *
+                                </label>
+
+                                <input type="tel" id="whatsapp" name="whatsapp" placeholder="(67) 99999-9999" required>
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- SOLICITAÇÃO -->
+
+                        <div class="form-section-title">
+                            <i class="fa-solid fa-headset"></i>
+                            Tipo de solicitação
+                        </div>
+
+                        <div class="form-grid">
+
+                            <div class="form-group">
+
+                                <label for="tipo-solicitacao">
+                                    Serviço desejado *
+                                </label>
+
+                                <select id="tipo-solicitacao" name="tipo_solicitacao" required>
+
+                                    <option value="">
+                                        Selecione o serviço desejado
+                                    </option>
+
+                                    <option value="suporte">
+                                        Suporte Técnico de TI
+                                    </option>
+
+                                    <option value="manutencao">
+                                        Manutenção de Computadores e Notebooks
+                                    </option>
+
+                                    <option value="gestao-ti">
+                                        Gestão e Administração de TI
+                                    </option>
+
+                                    <option value="redes">
+                                        Redes, Wi-Fi e Infraestrutura
+                                    </option>
+
+                                    <option value="servidores">
+                                        Servidores e Armazenamento
+                                    </option>
+
+                                    <option value="backup">
+                                        Backup e Segurança de Dados
+                                    </option>
+
+                                    <option value="cftv">
+                                        CFTV e Segurança Eletrônica
+                                    </option>
+
+                                    <option value="controle-acesso">
+                                        Controle de Acesso
+                                    </option>
+
+                                    <option value="email-dominio">
+                                        E-mail Corporativo e Domínios
+                                    </option>
+
+                                    <option value="sites">
+                                        Desenvolvimento de Sites
+                                    </option>
+
+                                    <option value="equipamentos">
+                                        Venda de Equipamentos e Soluções de TI
+                                    </option>
+
+                                    <option value="consultoria">
+                                        Consultoria em Tecnologia da Informação
+                                    </option>
+
+                                    <option value="orcamento">
+                                        Solicitação de Orçamento
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="atendimento">
+                                    Modalidade preferida
+                                </label>
+
+                                <select id="atendimento" name="modalidade">
+
+                                    <option value="">
+                                        Selecione
+                                    </option>
+
+                                    <option value="remoto">
+                                        Atendimento Remoto
+                                    </option>
+
+                                    <option value="presencial">
+                                        Atendimento Presencial
+                                    </option>
+
+                                    <option value="avaliar">
+                                        A definir após avaliação
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                        </div>
+
+                        <!-- DADOS PARA ATENDIMENTO PRESENCIAL -->
+
+                        <div id="presential-fields" style="display:none;">
+
+                            <div class="form-section-title">
+                                <i class="fa-solid fa-location-dot"></i>
+                                Local do atendimento
+                            </div>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="endereco">
+                                        Endereço *
+                                    </label>
+
+                                    <input type="text" id="endereco" name="endereco"
+                                        placeholder="Rua, avenida, número e complemento">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="bairro">
+                                        Bairro *
+                                    </label>
+
+                                    <input type="text" id="bairro" name="bairro" placeholder="Informe o bairro">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="cidade">
+                                        Cidade *
+                                    </label>
+
+                                    <input type="text" id="cidade" name="cidade" placeholder="Ex.: Campo Grande">
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="cep">
+                                        CEP
+                                    </label>
+
+                                    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9">
+
+                                </div>
+
+                            </div>
+
+                            <div class="form-section-title">
+                                <i class="fa-regular fa-clock"></i>
+                                Preferência de atendimento
+                            </div>
+
+                            <div class="form-grid">
+
+                                <div class="form-group">
+
+                                    <label for="periodo">
+                                        Melhor período *
+                                    </label>
+
+                                    <select id="periodo" name="periodo">
+
+                                        <option value="">
+                                            Selecione
+                                        </option>
+
+                                        <option value="manha">
+                                            Manhã
+                                        </option>
+
+                                        <option value="tarde">
+                                            Tarde
+                                        </option>
+
+                                        <option value="qualquer">
+                                            Qualquer horário
+                                        </option>
+
+                                    </select>
+
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label for="horario">
+                                        Melhor horário
+                                    </label>
+
+                                    <input type="time" id="horario" name="horario">
+
+                                </div>
+
+                            </div>
+
+                            <small class="schedule-notice">
+                                O horário informado representa uma preferência e estará sujeito
+                                à confirmação de disponibilidade pela L&amp;G Tecnologia.
+                            </small>
+
+                        </div>
+
+                        <!-- EQUIPAMENTO -->
+
+                        <div class="form-section-title">
+                            <i class="fa-solid fa-laptop"></i>
+                            Equipamento
+                        </div>
+
+                        <div class="form-grid" id="equipment-fields">
+
+                            <div class="form-group">
+
+                                <label for="equipamento">
+                                    Tipo de equipamento
+                                </label>
+
+                                <select id="equipamento" name="equipamento">
+
+                                    <option value="">
+                                        Selecione o equipamento
+                                    </option>
+
+                                    <option value="desktop">
+                                        Computador / Desktop
+                                    </option>
+
+                                    <option value="notebook">
+                                        Notebook
+                                    </option>
+
+                                    <option value="servidor">
+                                        Servidor
+                                    </option>
+
+                                    <option value="impressora">
+                                        Impressora / Multifuncional
+                                    </option>
+
+                                    <option value="roteador">
+                                        Roteador / Access Point
+                                    </option>
+
+                                    <option value="switch">
+                                        Switch de Rede
+                                    </option>
+
+                                    <option value="firewall">
+                                        Firewall
+                                    </option>
+
+                                    <option value="camera">
+                                        Câmera de Segurança
+                                    </option>
+
+                                    <option value="dvr-nvr">
+                                        DVR / NVR
+                                    </option>
+
+                                    <option value="controle-acesso">
+                                        Controle de Acesso
+                                    </option>
+
+                                    <option value="nobreak">
+                                        Nobreak / UPS
+                                    </option>
+
+                                    <option value="outro">
+                                        Outro
+                                    </option>
+
+                                </select>
+
+                            </div>
+
+                            <div class="form-group">
+
+                                <label for="marca-modelo">
+                                    Marca / Modelo
+                                </label>
+
+                                <input type="text" id="marca-modelo" name="marca_modelo"
+                                    placeholder="Ex.: Dell Inspiron 3520">
+
+                            </div>
+
+                            <div class="form-group" id="other-equipment-field" style="display:none;">
+
+                                <label for="outro-equipamento">
+                                    Informe o equipamento
+                                </label>
+
+                                <input type="text" id="outro-equipamento" name="outro_equipamento"
+                                    placeholder="Ex.: leitor biométrico, central de alarme, equipamento específico">
+
+                            </div>
+
+                        </div>
+
+
+                        <!-- DESCRIÇÃO -->
+
+                        <div class="form-section-title">
+                            <i class="fa-solid fa-clipboard-list"></i>
+                            Descrição da necessidade
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="descricao">
+                                Descreva o problema ou necessidade *
+                            </label>
+
+                            <textarea id="descricao" name="descricao" rows="7"
+                                placeholder="Informe com detalhes o que está acontecendo ou o serviço que deseja contratar."
+                                required></textarea>
+
+                        </div>
+
+
+                        <!-- DOCUMENTOS E IMAGENS -->
+
+                        <div class="form-section-title">
+                            <i class="fa-solid fa-paperclip"></i>
+                            Documentos e imagens
+                        </div>
+
+                        <div class="form-attachment-info">
+
+                            <i class="fa-solid fa-circle-info"></i>
+
+                            <div>
+                                <strong>Possui fotos ou documentos relacionados à solicitação?</strong>
+
+                                <p>
+                                    Após o envio deste formulário, nossa equipe poderá solicitar
+                                    imagens, documentos ou outros arquivos complementares por
+                                    WhatsApp ou e-mail.
+                                </p>
+                            </div>
+
+                        </div>
+
+
+                        <!-- CONSENTIMENTO -->
+
+                        <div class="form-consent">
+
+                            <input type="checkbox" id="consentimento" name="consentimento" value="Autorizado" required>
+
+                            <label for="consentimento">
+                                Autorizo a L&amp;G Tecnologia a utilizar
+                                estas informações exclusivamente para
+                                responder à minha solicitação. *
+                            </label>
+
+                        </div>
+
+
+                        <!-- BOTÃO -->
+
+                        <button type="submit" class="btn form-submit">
+
+                            <i class="fa-solid fa-paper-plane"></i>
+
+                            Enviar Solicitação
+
+                        </button>
+
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+         RODAPÉ
+    =========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <div class="footer-brand">
+
+                <img src="images/logo/logo-lg-contorno.png" alt="L&G Tecnologia" class="footer-logo">
+
+                <p>
+                    Soluções completas em Tecnologia da Informação
+                    para empresas de todos os portes.
+                </p>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a href="tel:+5567992825117">
+                    <i class="fa-solid fa-phone"></i>
+                    (67) 99282-5117
+                </a>
+
+                <a href="mailto:suporte@legtecnologia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    suporte@legtecnologia.com
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Campo Grande – MS
+                </span>
+
+            </div>
+
+
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <div class="footer-schedule">
+
+                    <div class="schedule-row">
+
+                        <strong>
+                            Segunda a sexta
+                        </strong>
+
+                        <span>
+                            07h30–11h00<br>
+                            13h00–18h00
+                        </span>
+
+                    </div>
+
+                    <div class="schedule-row">
+
+                        <strong>
+                            Sábado
+                        </strong>
+
+                        <span>
+                            08h00–11h00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <div class="footer-copy">
+
+            <div class="container">
+
+                &copy;
+                <span id="year"></span>
+
+                <strong>
+                    L&amp;G Tecnologia
+                </strong>
+
+                • Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- WHATSAPP FLUTUANTE -->
+
+    <a href="https://wa.me/5567992825117?text=Olá%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a L&G Tecnologia pelo WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+
+    <!-- JAVASCRIPT -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
