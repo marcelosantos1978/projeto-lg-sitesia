@@ -2,51 +2,93 @@
 <html lang="pt-BR">
 
 <head>
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <!-- TÍTULO -->
     <title>L&G Tecnologia | Soluções e Suporte em TI</title>
 
+    <!-- SEO -->
     <meta name="description"
-        content="Suporte em TI, infraestrutura, redes, servidores, CFTV e desenvolvimento de sites profissionais em Campo Grande-MS e todo Mato Grosso do Sul.">
+        content="L&G Tecnologia oferece soluções em suporte de TI, infraestrutura, redes, servidores, segurança, CFTV e desenvolvimento de sites para empresas em Campo Grande e todo Mato Grosso do Sul.">
 
     <meta name="keywords"
         content="TI, suporte técnico, servidores, redes, CFTV, sites, Campo Grande, Mato Grosso do Sul">
 
     <meta name="author" content="L&G Tecnologia">
 
-    <!-- Google Fonts -->
+
+    <!-- ==========================================
+         OPEN GRAPH - COMPARTILHAMENTO
+    =========================================== -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="L&G Tecnologia | Soluções e Suporte em TI">
+
+    <meta property="og:description"
+        content="Soluções em TI, infraestrutura, redes, servidores, CFTV e desenvolvimento de sites para empresas em Campo Grande e todo Mato Grosso do Sul.">
+
+    <meta property="og:url" content="https://www.legtecnologia.com/">
+
+    <meta property="og:image" content="https://www.legtecnologia.com/images/og-lg-tecnologia.jpg">
+
+    <meta property="og:image:alt" content="L&G Tecnologia - Soluções e Suporte em TI">
+
+    <meta property="og:locale" content="pt_BR">
+
+    <meta property="og:site_name" content="L&G Tecnologia">
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+
+    <!-- ==========================================
+         GOOGLE FONTS
+    =========================================== -->
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
         rel="stylesheet">
 
-    <!-- Font Awesome -->
+
+    <!-- ==========================================
+         FONT AWESOME
+    =========================================== -->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
 
-    <!-- CSS -->
+
+    <!-- ==========================================
+         CSS
+    =========================================== -->
+
     <link rel="stylesheet" href="css/variables.css">
 
     <link rel="stylesheet" href="css/style.css">
-    
+
     <link rel="stylesheet" href="css/header.css">
-    
+
     <link rel="stylesheet" href="css/hero.css">
-    
+
     <link rel="stylesheet" href="css/services.css">
-    
+
     <link rel="stylesheet" href="css/about.css">
-    
+
     <link rel="stylesheet" href="css/advantages.css">
-    
+
     <link rel="stylesheet" href="css/process.css">
-    
+
     <link rel="stylesheet" href="css/footer.css">
-    
+
     <link rel="stylesheet" href="css/responsive.css">
-    
+
     <link rel="stylesheet" href="css/animations.css">
+
 </head>
 
 <body>
@@ -68,9 +110,9 @@
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#">Sites</a></li>
+                    <li><a href="#sites">Sites</a></li>
                     <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#">Contato</a></li>
+                    <li><a href="#contato">Contato</a></li>
                 </ul>
 
             </nav>
@@ -99,7 +141,7 @@
                 </span>
 
                 <h1>
-                    Tecnologia que conecta empresas ao futuro.
+                    Tecnologia que mantém sua empresa segura, produtiva e sempre funcionando.
                 </h1>
 
                 <p>
@@ -111,32 +153,33 @@
 
                 <div class="hero-buttons">
 
-                    <a href="#" class="btn">
-                        Solicitar Diagnóstico
+                    <a href="https://wa.me/5567992825117?text=Olá%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20solicitar%20um%20orçamento."
+                        class="btn" target="_blank" rel="noopener noreferrer">
+                        Solicitar Orçamento
                     </a>
 
                     <a href="#servicos" class="btn-outline">
-                        Conheça nossos Serviços
+                        Ver nossos serviços
                     </a>
 
                 </div>
 
-                <div class="hero-numbers">
+                <div class="hero-highlights">
 
-                    <div class="number-item">
-                        <h3>2018</h3>
-                        <span>Fundação</span>
-                    </div>
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Desde 2018
+                    </span>
 
-                    <div class="number-item">
-                        <h3>MS</h3>
-                        <span>Atendimento Estadual</span>
-                    </div>
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Atendimento em todo MS
+                    </span>
 
-                    <div class="number-item">
-                        <h3>TI</h3>
-                        <span>Especialistas</span>
-                    </div>
+                    <span>
+                        <i class="fa-solid fa-check"></i>
+                        Soluções para empresas
+                    </span>
 
                 </div>
 
@@ -144,7 +187,7 @@
 
             <div class="hero-image">
 
-                <img src="images/banners/banner-home.png" alt="Soluções tecnológicas da L&G Tecnologia">
+                <img src="images/hero/hero-lg.webp" alt="L&G Tecnologia">
 
             </div>
 
@@ -253,7 +296,7 @@
 
                 </div>
 
-                <div class="service-card">
+                <div class="service-card" id="sites">
 
                     <div class="service-icon">
                         <i class="fas fa-globe"></i>
@@ -586,141 +629,377 @@
      COMO TRABALHAMOS
 ========================================== -->
 
-<section class="process" id="processo">
+    <section class="process" id="processo">
 
-    <div class="container">
+        <div class="container">
 
-        <span class="section-badge">
-            COMO TRABALHAMOS
-        </span>
+            <span class="section-badge">
+                COMO TRABALHAMOS
+            </span>
 
-        <h2>
-            Um processo simples, transparente e eficiente.
-        </h2>
+            <h2>
+                Um processo simples, transparente e eficiente.
+            </h2>
 
-        <p class="section-description">
+            <p class="section-description">
 
-            Cada projeto é conduzido com planejamento,
-            organização e acompanhamento constante para
-            garantir segurança, desempenho e resultados.
+                Cada projeto é conduzido com planejamento,
+                organização e acompanhamento constante para
+                garantir segurança, desempenho e resultados.
 
-        </p>
+            </p>
 
-        <div class="process-container">
+            <div class="process-container">
 
-            <div class="process-step">
+                <div class="process-step">
 
-                <div class="step-number">
-                    1
+                    <div class="step-number">
+                        1
+                    </div>
+
+                    <h3>Diagnóstico</h3>
+
+                    <p>
+
+                        Conhecemos sua empresa e entendemos
+                        seus desafios tecnológicos.
+
+                    </p>
+
                 </div>
 
-                <h3>Diagnóstico</h3>
+                <div class="process-arrow">
 
-                <p>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    Conhecemos sua empresa e entendemos
-                    seus desafios tecnológicos.
-
-                </p>
-
-            </div>
-
-            <div class="process-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <div class="process-step">
-
-                <div class="step-number">
-                    2
                 </div>
 
-                <h3>Planejamento</h3>
+                <div class="process-step">
 
-                <p>
+                    <div class="step-number">
+                        2
+                    </div>
 
-                    Definimos a melhor estratégia para
-                    alcançar seus objetivos.
+                    <h3>Planejamento</h3>
 
-                </p>
+                    <p>
 
-            </div>
+                        Definimos a melhor estratégia para
+                        alcançar seus objetivos.
 
-            <div class="process-arrow">
+                    </p>
 
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <div class="process-step">
-
-                <div class="step-number">
-                    3
                 </div>
 
-                <h3>Implantação</h3>
+                <div class="process-arrow">
 
-                <p>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    Executamos todas as melhorias com
-                    organização e segurança.
-
-                </p>
-
-            </div>
-
-            <div class="process-arrow">
-
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <div class="process-step">
-
-                <div class="step-number">
-                    4
                 </div>
 
-                <h3>Acompanhamento</h3>
+                <div class="process-step">
 
-                <p>
+                    <div class="step-number">
+                        3
+                    </div>
 
-                    Monitoramos o ambiente e prestamos
-                    suporte contínuo.
+                    <h3>Implantação</h3>
 
-                </p>
+                    <p>
 
-            </div>
+                        Executamos todas as melhorias com
+                        organização e segurança.
 
-            <div class="process-arrow">
+                    </p>
 
-                <i class="fa-solid fa-arrow-right"></i>
-
-            </div>
-
-            <div class="process-step">
-
-                <div class="step-number">
-                    5
                 </div>
 
-                <h3>Evolução</h3>
+                <div class="process-arrow">
 
-                <p>
+                    <i class="fa-solid fa-arrow-right"></i>
 
-                    Aprimoramos as soluções conforme sua empresa cresce.
+                </div>
 
-                </p>
+                <div class="process-step">
+
+                    <div class="step-number">
+                        4
+                    </div>
+
+                    <h3>Acompanhamento</h3>
+
+                    <p>
+
+                        Monitoramos o ambiente e prestamos
+                        suporte contínuo.
+
+                    </p>
+
+                </div>
+
+                <div class="process-arrow">
+
+                    <i class="fa-solid fa-arrow-right"></i>
+
+                </div>
+
+                <div class="process-step">
+
+                    <div class="step-number">
+                        5
+                    </div>
+
+                    <h3>Evolução</h3>
+
+                    <p>
+
+                        Aprimoramos as soluções conforme sua empresa cresce.
+
+                    </p>
+
+                </div>
 
             </div>
 
         </div>
 
-    </div>
+    </section>
 
-</section>
+    <!-- ==========================================
+     CONTATO
+========================================== -->
+
+    <section class="contact" id="contato">
+
+        <div class="container contact-container">
+
+            <div class="contact-content">
+
+                <span class="section-badge">
+                    FALE COM A L&G
+                </span>
+
+                <h2>
+                    Vamos conversar sobre as necessidades da sua empresa?
+                </h2>
+
+                <p>
+                    Entre em contato para solicitar atendimento, tirar dúvidas
+                    ou receber uma proposta personalizada para sua empresa.
+                </p>
+
+                <a href="https://wa.me/5567992825117?text=Olá%2C%20gostaria%20de%20conhecer%20melhor%20os%20serviços%20da%20L%26G%20Tecnologia."
+                    class="btn" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-whatsapp"></i>
+                    Falar pelo WhatsApp
+                </a>
+
+            </div>
+
+            <div class="contact-info">
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-whatsapp"></i>
+                    </div>
+
+                    <div>
+                        <h3>WhatsApp e telefone</h3>
+
+                        <a href="https://wa.me/5567992825117" target="_blank" rel="noopener noreferrer">
+                            (67) 99282-5117
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+
+                    <div>
+                        <h3>E-mail</h3>
+
+                        <a href="mailto:suporte@legtecnologia.com">
+                            suporte@legtecnologia.com
+                        </a>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+
+                    <div>
+                        <h3>Localização</h3>
+                        <p>Campo Grande – MS</p>
+                    </div>
+
+                </div>
+
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-solid fa-clock"></i>
+                    </div>
+
+                    <div>
+                        <h3>Horário de atendimento</h3>
+
+                        <p>
+                            Segunda a sexta-feira, das 7h30 às 11h
+                            e das 13h às 18h.
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Facebook -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-facebook-f"></i>
+                    </div>
+
+                    <div>
+                        <h3>Facebook</h3>
+
+                        <a href="https://www.facebook.com/share/1BzJ7NZY9J/" target="_blank" rel="noopener noreferrer">
+                            Acessar página da L&amp;G
+                        </a>
+                    </div>
+
+                </div>
+
+
+                <!-- Instagram -->
+                <div class="contact-item">
+
+                    <div class="contact-icon">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+
+                    <div>
+                        <h3>Instagram</h3>
+
+                        <a href="https://www.instagram.com/legtecnologia/" target="_blank" rel="noopener noreferrer">
+                            @legtecnologia
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- ==========================================
+     RODAPÉ
+========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- Logo -->
+            <div class="footer-brand">
+
+                <img src="images/logo/logo-lg-contorno.png" alt="L&G Tecnologia" class="footer-logo">
+
+                <p>
+                    Conectando empresas à tecnologia com soluções inteligentes, seguras e eficientes.
+                </p>
+
+            </div>
+
+            <!-- Contato -->
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a href="tel:+5567992825117">
+                    <i class="fa-solid fa-phone"></i>
+                    (67) 99282-5117
+                </a>
+
+                <a href="mailto:suporte@legtecnologia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    suporte@legtecnologia.com
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Campo Grande – MS
+                </span>
+
+            </div>
+
+            <!-- Atendimento -->
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <div class="footer-schedule">
+
+                    <div class="schedule-row">
+
+                        <strong>Segunda a sexta</strong>
+
+                        <span>
+                            07h30–11h00<br>
+                            13h00–18h00
+                        </span>
+
+                    </div>
+
+                    <div class="schedule-row">
+
+                        <strong>Sábado</strong>
+
+                        <span>
+                            08h00–11h00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Direitos Autorais -->
+        <div class="footer-copy">
+
+            <div class="container">
+
+                &copy; <span id="year"></span>
+                <strong>L&amp;G Tecnologia</strong>
+                • Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+     WHATSAPP FLUTUANTE
+========================================== -->
+
+    <a href="https://wa.me/5567992825117?text=Olá%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20mais%20informações."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a L&G Tecnologia pelo WhatsApp">
+        <i class="fa-brands fa-whatsapp"></i>
+    </a>
 
     <!-- JavaScript -->
     <script src="js/script.js"></script>

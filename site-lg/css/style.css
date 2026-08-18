@@ -739,3 +739,65 @@ nav a:hover{
     transform:scale(1.08);
     background:var(--primary-dark);
 }
+
+/* ==========================================
+   WHATSAPP FLUTUANTE
+========================================== */
+
+.whatsapp-float{
+    position:fixed;
+    right:24px;
+    bottom:24px;
+
+    width:58px;
+    height:58px;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    background:#25D366;
+    color:#ffffff;
+
+    border-radius:50%;
+
+    font-size:30px;
+
+    box-shadow:0 10px 28px rgba(0,0,0,.22);
+
+    z-index:9999;
+
+    transition:all .3s ease;
+}
+
+.whatsapp-float:hover{
+    transform:translateY(-4px) scale(1.05);
+
+    box-shadow:0 16px 34px rgba(0,0,0,.28);
+
+    color:#ffffff;
+}
+
+/* ==========================================
+   AJUSTE DAS ÂNCORAS DO MENU
+========================================== */
+
+#inicio{
+    scroll-margin-top:70px;
+}
+
+#servicos{
+    scroll-margin-top:70px;
+}
+
+#sobre{
+    scroll-margin-top:70px;
+}
+
+#sites{
+    scroll-margin-top:145px;
+}
+
+#contato{
+    scroll-margin-top:70px;
+}
