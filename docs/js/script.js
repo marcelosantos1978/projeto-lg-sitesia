@@ -5,6 +5,19 @@ const equipmentFields = document.getElementById("equipment-fields");
 
 if (serviceSelect && equipmentFields) {
 
+    // Selecionar automaticamente o serviço informado na URL
+    const urlParams = new URLSearchParams(window.location.search);
+    const selectedService = urlParams.get("servico");
+
+    if (selectedService) {
+        const optionExists = Array.from(serviceSelect.options)
+            .some(option => option.value === selectedService);
+
+        if (optionExists) {
+            serviceSelect.value = selectedService;
+        }
+    }
+
     const servicesWithoutEquipment = [
         "sites",
         "email-dominio",
