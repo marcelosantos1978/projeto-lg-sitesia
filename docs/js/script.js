@@ -26,21 +26,73 @@ if (serviceSelect && equipmentFields) {
         "contrato_mensal_ti"
     ];
 
+
     function updateEquipmentFields() {
 
         const selectedService = serviceSelect.value;
+        const equipmentSection = document.getElementById("equipment-section");
+        const equipmentSelect = document.getElementById("equipamento");
+        const otherEquipmentField = document.getElementById("other-equipment-field");
+        const otherEquipmentInput = document.getElementById("outro-equipamento");
 
+        if (!equipmentSection || !equipmentSelect) return;
+
+        // Equipamentos permitidos para cada serviço
+        const equipmentByService = {
+            "manutencao": ["desktop", "notebook", "netbook", "macbook", "servidor"],
+            "redes": ["roteador", "switch", "firewall", "nobreak"],
+            "servidores": ["servidor", "nobreak"],
+            "backup": ["desktop", "notebook", "servidor"],
+            "cftv": ["camera", "dvr-nvr", "nobreak"],
+            "controle-acesso": ["controle-acesso"]
+        };
+
+        // Serviços que não necessitam de equipamento
         if (servicesWithoutEquipment.includes(selectedService)) {
-
-            equipmentFields.style.display = "none";
-
-        } else {
-
-            equipmentFields.style.display = "grid";
-
+            equipmentSection.style.display = "none";
+            equipmentSelect.value = "";
+            equipmentSelect.dispatchEvent(new Event("change"));
+            return;
         }
 
+        equipmentSection.style.display = "block";
+        equipmentFields.style.display = "grid";
+
+        // Recupera todas as opções originais
+        const options = Array.from(equipmentSelect.options);
+        const allowedEquipment = equipmentByService[selectedService];
+
+        options.forEach(option => {
+
+            // Opção inicial permanece disponível
+            if (option.value === "") {
+                option.hidden = false;
+                option.disabled = false;
+                return;
+            }
+
+            // Serviços sem restrição exibem todos os equipamentos
+            const isAllowed = option.value === "outro" ||
+                !allowedEquipment ||
+                allowedEquipment.includes(option.value);
+
+            option.hidden = !isAllowed;
+            option.disabled = !isAllowed;
+
+        });
+
+        // Limpa a seleção anterior caso não seja compatível
+        const selectedOption = equipmentSelect.selectedOptions[0];
+
+        if (!selectedOption || selectedOption.disabled) {
+            equipmentSelect.value = "";
+        }
+
+        // Atualiza campos dependentes do equipamento
+        equipmentSelect.dispatchEvent(new Event("change"));
+
     }
+
 
     serviceSelect.addEventListener("change", updateEquipmentFields);
 
