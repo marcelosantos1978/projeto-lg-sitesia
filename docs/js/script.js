@@ -267,3 +267,44 @@ if (attendanceSelect && presentialFields) {
 
     updatePresentialFields();
 }
+
+
+/* ==========================================
+   IDENTIFICAÇÃO DO CONTRATO MENSAL
+========================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const params = new URLSearchParams(window.location.search);
+
+    const plano = params.get("plano");
+    const descricao = document.getElementById("descricao");
+    const tipoSolicitacao = document.getElementById("tipo-solicitacao");
+
+    if (!descricao || !tipoSolicitacao) return;
+
+    const descricoes = {
+
+        essencial:
+            "Tenho interesse no L&G TI Essencial, " +
+            "com mensalidade a partir de R$ 1.000,00 " +
+            "e contrato mínimo de 12 meses. " +
+            "Gostaria de receber uma proposta comercial.",
+
+        empresarial:
+            "Tenho interesse no contrato de Gestão de TI Empresarial. " +
+            "Gostaria de solicitar uma avaliação da infraestrutura " +
+            "e receber uma proposta comercial personalizada."
+
+    };
+
+    if (
+        tipoSolicitacao.value === "contrato_mensal_ti" &&
+        Object.prototype.hasOwnProperty.call(descricoes, plano)
+    ) {
+
+        descricao.value = descricoes[plano];
+
+    }
+
+});

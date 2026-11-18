@@ -507,188 +507,188 @@
    CONTATO - TABLET
 ========================= */
 
-.contact{
-    padding:70px 0;
-}
+    .contact {
+        padding: 70px 0;
+    }
 
-.contact-container{
-    display:grid;
-    grid-template-columns:1.05fr 1fr;
-    gap:45px;
-    align-items:start;
-}
+    .contact-container {
+        display: grid;
+        grid-template-columns: 1.05fr 1fr;
+        gap: 45px;
+        align-items: start;
+    }
 
-.contact-content{
-    width:100%;
-}
+    .contact-content {
+        width: 100%;
+    }
 
-.contact-content h2{
-    font-size:36px;
-    line-height:1.15;
-}
+    .contact-content h2 {
+        font-size: 36px;
+        line-height: 1.15;
+    }
 
-.contact-content p{
-    font-size:15px;
-    line-height:1.7;
-}
+    .contact-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 
-.contact-info{
-    width:100%;
-    gap:14px;
-}
+    .contact-info {
+        width: 100%;
+        gap: 14px;
+    }
 
-.contact-item{
-    width:100%;
-    padding:18px 20px;
-}
+    .contact-item {
+        width: 100%;
+        padding: 18px 20px;
+    }
 
-.contact-item h3{
-    font-size:16px;
-}
+    .contact-item h3 {
+        font-size: 16px;
+    }
 
-.contact-item p,
-.contact-item a{
-    font-size:14px;
-}
+    .contact-item p,
+    .contact-item a {
+        font-size: 14px;
+    }
 
     /* =========================
    COMO TRABALHAMOS - TABLET
 ========================= */
 
-.process{
-    padding:70px 0;
-}
+    .process {
+        padding: 70px 0;
+    }
 
-.process h2{
-    font-size:38px;
-    line-height:1.15;
-}
+    .process h2 {
+        font-size: 38px;
+        line-height: 1.15;
+    }
 
-.process .section-description{
-    max-width:700px;
-    font-size:16px;
-    line-height:1.7;
-    margin-bottom:40px;
-}
+    .process .section-description {
+        max-width: 700px;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
 
-.process-container{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:22px;
-}
+    .process-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 22px;
+    }
 
-.process-step{
-    width:100%;
-    min-height:260px;
-    padding:26px 24px;
-}
+    .process-step {
+        width: 100%;
+        min-height: 260px;
+        padding: 26px 24px;
+    }
 
-.process-step:nth-child(9){
-    grid-column:1 / -1;
-    max-width:360px;
-    justify-self:center;
-}
+    .process-step:nth-child(9) {
+        grid-column: 1 / -1;
+        max-width: 360px;
+        justify-self: center;
+    }
 
-.process-arrow{
-    display:none;
-}
+    .process-arrow {
+        display: none;
+    }
 
-.step-number{
-    width:54px;
-    height:54px;
-    margin-bottom:16px;
-}
+    .step-number {
+        width: 54px;
+        height: 54px;
+        margin-bottom: 16px;
+    }
 
-.process-step h3{
-    min-height:auto;
-    font-size:20px;
-    margin-bottom:10px;
-}
+    .process-step h3 {
+        min-height: auto;
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
 
-.process-step p{
-    font-size:15px;
-    line-height:1.7;
-}
+    .process-step p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
 
     /* =========================
    DIFERENCIAIS - TABLET
 ========================= */
 
-.advantages{
-    padding:70px 0;
-}
+    .advantages {
+        padding: 70px 0;
+    }
 
-.advantages h2{
-    font-size:38px;
-    line-height:1.15;
-    max-width:700px;
-}
+    .advantages h2 {
+        font-size: 38px;
+        line-height: 1.15;
+        max-width: 700px;
+    }
 
-.advantages .section-description{
-    max-width:700px;
-    font-size:16px;
-    line-height:1.7;
-    margin-bottom:40px;
-}
+    .advantages .section-description {
+        max-width: 700px;
+        font-size: 16px;
+        line-height: 1.7;
+        margin-bottom: 40px;
+    }
 
-.timeline{
-    max-width:760px;
-    margin:0 auto;
-}
+    .timeline {
+        max-width: 760px;
+        margin: 0 auto;
+    }
 
-.timeline-item{
-    grid-template-columns:64px 1fr;
-    gap:12px;
-    margin-bottom:20px;
-}
+    .timeline-item {
+        grid-template-columns: 64px 1fr;
+        gap: 12px;
+        margin-bottom: 20px;
+    }
 
-.timeline-icon{
-    width:64px;
-    height:64px;
-}
+    .timeline-icon {
+        width: 64px;
+        height: 64px;
+    }
 
-.timeline-content{
-    padding:24px 26px;
-}
+    .timeline-content {
+        padding: 24px 26px;
+    }
 
     /* =========================
    SOBRE - TABLET
 ========================= */
 
-.about{
-    padding:70px 0;
-}
+    .about {
+        padding: 70px 0;
+    }
 
-.about-container{
-    display:block;
-}
+    .about-container {
+        display: block;
+    }
 
-.about-content{
-    width:100%;
-    max-width:760px;
-    margin:0 auto;
-}
+    .about-content {
+        width: 100%;
+        max-width: 760px;
+        margin: 0 auto;
+    }
 
-.about-content h2{
-    max-width:650px;
-    font-size:38px;
-    line-height:1.15;
-}
+    .about-content h2 {
+        max-width: 650px;
+        font-size: 38px;
+        line-height: 1.15;
+    }
 
-.about-content p{
-    line-height:1.7;
-}
+    .about-content p {
+        line-height: 1.7;
+    }
 
-.about-features{
-    display:grid;
-    grid-template-columns:repeat(2, 1fr);
-    gap:14px 30px;
-    margin-top:34px;
-}
+    .about-features {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 14px 30px;
+        margin-top: 34px;
+    }
 
-.about-content .btn{
-    margin-top:24px;
-}
+    .about-content .btn {
+        margin-top: 24px;
+    }
 
     /* =========================
    SERVIÇOS - TABLET
@@ -811,16 +811,38 @@
    WHATSAPP FLUTUANTE - CELULAR
 ========================================== */
 
-@media (max-width: 768px){
+    @media (max-width: 768px) {
 
-    .whatsapp-float{
-        right:16px;
-        bottom:16px;
-        width:52px;
-        height:52px;
-        font-size:27px;
+        .whatsapp-float {
+            right: 16px;
+            bottom: 16px;
+            width: 52px;
+            height: 52px;
+            font-size: 27px;
+        }
+
     }
 
 }
+
+/* ==========================================
+   AJUSTE DA GRADE DE CONTRATOS MENSAIS
+========================================== */
+
+@media (min-width: 769px) {
+
+    #contratos-ti .services-grid.contracts-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        width: 100%;
+        max-width: none;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    #contratos-ti .services-grid.contracts-grid {
+        grid-template-columns: 1fr;
+    }
 
 }

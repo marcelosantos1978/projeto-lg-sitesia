@@ -1,0 +1,29 @@
+/* ==========================================
+   CONTRATOS MENSAIS DE TI
+========================================== */
+
+#contratos-ti .contracts-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+
+    width: 100%;
+    max-width: none;
+}
+
+#contratos-ti .contracts-grid .service-card {
+    width: 100%;
+    max-width: none;
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* Responsividade */
+
+@media (max-width: 768px) {
+
+    #contratos-ti .contracts-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
