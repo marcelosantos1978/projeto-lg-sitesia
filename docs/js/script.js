@@ -22,7 +22,8 @@ if (serviceSelect && equipmentFields) {
         "sites",
         "email-dominio",
         "consultoria",
-        "orcamento"
+        "orcamento",
+        "contrato_mensal_ti"
     ];
 
     function updateEquipmentFields() {
