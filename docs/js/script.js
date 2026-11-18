@@ -308,3 +308,75 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
 });
+
+
+/* ==========================================
+   MENU MOBILE - L&G TECNOLOGIA
+========================================== */
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const menuButton = document.querySelector(".menu-toggle");
+    const menu = document.getElementById("menu-principal");
+
+    if (!menuButton || !menu) return;
+
+    function closeMenu() {
+        menu.classList.remove("menu-open");
+        menuButton.setAttribute("aria-expanded", "false");
+        menuButton.setAttribute("aria-label", "Abrir menu de navegação");
+
+        const icon = menuButton.querySelector("i");
+
+        if (icon) {
+            icon.classList.remove("fa-xmark");
+            icon.classList.add("fa-bars");
+        }
+    }
+
+    menuButton.addEventListener("click", function () {
+
+        const isOpen = menu.classList.toggle("menu-open");
+
+        menuButton.setAttribute("aria-expanded", String(isOpen));
+
+        menuButton.setAttribute(
+            "aria-label",
+            isOpen ? "Fechar menu de navegação" : "Abrir menu de navegação"
+        );
+
+        const icon = menuButton.querySelector("i");
+
+        if (icon) {
+            icon.classList.toggle("fa-bars", !isOpen);
+            icon.classList.toggle("fa-xmark", isOpen);
+        }
+
+    });
+
+    menu.querySelectorAll("a").forEach(function (link) {
+        link.addEventListener("click", closeMenu);
+    });
+
+    document.addEventListener("keydown", function (event) {
+        if (event.key === "Escape") {
+            closeMenu();
+        }
+    });
+
+    document.addEventListener("click", function (event) {
+        if (
+            !menu.contains(event.target) &&
+            !menuButton.contains(event.target)
+        ) {
+            closeMenu();
+        }
+    });
+
+    window.addEventListener("resize", function () {
+        if (window.innerWidth > 768) {
+            closeMenu();
+        }
+    });
+
+});

@@ -96,9 +96,10 @@
 
 <body>
 
+
     <!-- ==========================================
-         HEADER
-    =========================================== -->
+     HEADER
+========================================== -->
 
     <header>
 
@@ -108,11 +109,21 @@
                 <img src="images/logo/logo-lg.png" alt="L&G Tecnologia">
             </a>
 
-            <nav>
+            <!-- BOTÃO MENU MOBILE -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- NAVEGAÇÃO -->
+            <nav id="menu-principal">
 
                 <ul>
                     <li><a href="#inicio">Início</a></li>
                     <li><a href="#servicos">Serviços</a></li>
+                    <li><a href="#contratos-ti">Contratos Mensais de TI</a></li>
                     <li><a href="#sites">Sites</a></li>
                     <li><a href="#sobre">Sobre</a></li>
                     <li><a href="#contato">Contato</a></li>
@@ -120,7 +131,8 @@
 
             </nav>
 
-            <a href="solicitar-atendimento.html" class="btn">
+            <!-- BOTÃO DE CONTATO -->
+            <a href="solicitar-atendimento.html" class="btn header-contact-btn">
                 Fale Conosco
             </a>
 
@@ -396,7 +408,15 @@
                         10 computadores ou notebooks.
                     </p>
 
-                    <h3>A partir de R$ 1.000,00/mês</h3>
+                    <div class="contract-price">
+                        <span class="contract-price-label">INVESTIMENTO MENSAL</span>
+
+                        <div class="contract-price-value">
+                            <span class="contract-price-prefix">A partir de</span>
+                            <strong>R$ 1.000,00</strong>
+                            <span class="contract-price-period">/mês</span>
+                        </div>
+                    </div>
 
                     <p>
                         Suporte remoto e presencial conforme a demanda,

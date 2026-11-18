@@ -846,3 +846,80 @@
     }
 
 }
+
+
+/* ==========================================
+   MENU MOBILE RESPONSIVO
+========================================== */
+
+@media (max-width: 768px) {
+
+    header .container {
+        position: relative;
+    }
+
+    header .menu-toggle {
+        display: flex;
+        flex-shrink: 0;
+        margin-left: auto;
+    }
+
+    header .header-contact-btn {
+        display: none;
+    }
+
+    header #menu-principal {
+        display: none;
+        position: absolute;
+
+        top: 100%;
+        left: 0;
+        right: 0;
+
+        width: 100%;
+        max-height: calc(100dvh - 90px);
+        overflow-y: auto;
+
+        background: #ffffff;
+        border: 1px solid #e1eaf3;
+        border-radius: 0 0 12px 12px;
+
+        box-shadow: 0 16px 28px rgba(0, 0, 0, 0.12);
+        z-index: 1000;
+    }
+
+    header #menu-principal.menu-open {
+        display: block;
+    }
+
+    header #menu-principal ul {
+        display: flex;
+        flex-direction: column;
+        gap: 0;
+        padding: 12px 18px;
+        margin: 0;
+        list-style: none;
+    }
+
+    header #menu-principal li {
+        border-bottom: 1px solid #edf1f5;
+    }
+
+    header #menu-principal li:last-child {
+        border-bottom: none;
+    }
+
+    header #menu-principal a {
+        display: block;
+        padding: 14px 8px;
+        color: #14243a;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    header #menu-principal a:hover,
+    header #menu-principal a:focus-visible {
+        color: #1877d2;
+        background: #f0f7ff;
+    }
+}
