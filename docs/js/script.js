@@ -18,13 +18,17 @@ if (serviceSelect && equipmentFields) {
         }
     }
 
+
     const servicesWithoutEquipment = [
+        "consultoria",
+        "contrato_mensal_ti",
         "sites",
         "email-dominio",
-        "consultoria",
+        "gestao-ti",
         "orcamento",
-        "contrato_mensal_ti"
+        "outro"
     ];
+
 
 
     function updateEquipmentFields() {
@@ -39,24 +43,45 @@ if (serviceSelect && equipmentFields) {
 
         // Equipamentos permitidos para cada serviço
         const equipmentByService = {
-            "manutencao": ["desktop", "notebook", "netbook", "macbook", "servidor"],
-            "redes": ["roteador", "switch", "firewall", "nobreak"],
-            "servidores": ["servidor", "nobreak"],
-            "backup": ["desktop", "notebook", "servidor"],
-            "cftv": ["camera", "dvr-nvr", "nobreak"],
-            "controle-acesso": ["controle-acesso"]
+            "manutencao": ["desktop", "notebook", "netbook", "macbook", "impressora", "servidor"],
+            "redes": ["desktop", "notebook", "roteador", "switch", "firewall", "nobreak", "servidor"],
+            "servidores": ["desktop", "notebook", "servidor", "nobreak"],
+            "backup": ["desktop", "notebook", "netbook", "macbook", "servidor"],
+            "cftv": ["camera", "dvr-nvr", "nobreak", "roteador", "switch"],
+
+            "controle-acesso": ["catraca", "controladora-acesso", "fechadura-eletronica", "leitor-biometrico", "leitor-facial", "teclado-rfid"],
+
         };
 
-        // Serviços que não necessitam de equipamento
-        if (servicesWithoutEquipment.includes(selectedService)) {
+        // Oculta equipamentos quando nenhum serviço está selecionado
+        // ou quando o serviço não necessita de equipamento
+
+
+        if (!selectedService || servicesWithoutEquipment.includes(selectedService)) {
+
             equipmentSection.style.display = "none";
+            equipmentSelect.required = false;
+
+            // Limpa o equipamento selecionado
             equipmentSelect.value = "";
+
+            // Limpa a marca e o modelo informados anteriormente
+            const marcaModeloField = document.getElementById("marca-modelo");
+
+            if (marcaModeloField) {
+                marcaModeloField.value = "";
+            }
+
+            // Atualiza o campo "Outro equipamento"
             equipmentSelect.dispatchEvent(new Event("change"));
+
             return;
         }
 
+
         equipmentSection.style.display = "block";
         equipmentFields.style.display = "grid";
+        equipmentSelect.required = true;
 
         // Recupera todas as opções originais
         const options = Array.from(equipmentSelect.options);
@@ -93,10 +118,62 @@ if (serviceSelect && equipmentFields) {
 
     }
 
+    // ==========================================
+    // ORIENTAÇÕES DINÂMICAS POR TIPO DE SERVIÇO
+    // ==========================================
+
+    const descricaoField = document.getElementById("descricao");
+
+    const placeholdersPorServico = {
+        "suporte": "Descreva o problema apresentado e informe quando começou.",
+
+        "contrato_mensal_ti": "Conte-nos sobre sua empresa, quantidade de usuários e necessidades de suporte e gestão de TI.",
+
+        "manutencao": "Informe o equipamento, os problemas apresentados e quando começaram.",
+
+        "gestao-ti": "Descreva a estrutura atual de TI da empresa e quais atividades deseja contratar.",
+
+        "redes": "Descreva sua rede, os problemas identificados ou as melhorias desejadas.",
+
+        "servidores": "Informe o tipo de servidor, sua utilização e o serviço ou problema que precisa solucionar.",
+
+        "backup": "Descreva quais dados precisam ser protegidos e como o backup é realizado atualmente.",
+
+        "cftv": "Informe a quantidade aproximada de câmeras e o tipo de instalação ou manutenção desejada.",
+
+        "controle-acesso": "Descreva o ambiente e a necessidade de controle de acesso.",
+
+        "email-dominio": "Sua empresa já possui um domínio registrado? Se sim, informe o endereço (ex.: suaempresa.com.br). Informe também se deseja registrar um novo domínio, criar contas de e-mail corporativo, configurar e-mails existentes ou realizar uma migração. Caso necessite de contas de e-mail, indique a quantidade aproximada.",
+
+        "sites": "Conte-nos sobre sua empresa, o tipo de site desejado e as funcionalidades necessárias.",
+
+        "equipamentos": "Informe os equipamentos desejados, quantidades e configurações necessárias.",
+
+        "consultoria": "Descreva os objetivos da consultoria e os principais desafios tecnológicos.",
+
+        "orcamento": "Descreva o produto ou serviço para o qual deseja receber um orçamento.",
+
+        "outro": "Descreva sua necessidade ou o serviço que deseja contratar."
+    };
+
+    function atualizarOrientacaoDescricao() {
+        if (!descricaoField) return;
+
+        const servico = serviceSelect.value;
+
+        descricaoField.placeholder =
+            placeholdersPorServico[servico] ||
+            descricaoField.dataset.placeholderDefault ||
+            "Descreva sua necessidade ou o serviço que deseja contratar.";
+    }
 
     serviceSelect.addEventListener("change", updateEquipmentFields);
 
+    serviceSelect.addEventListener("change", atualizarOrientacaoDescricao);
+
     updateEquipmentFields();
+
+    atualizarOrientacaoDescricao();
 }
 
 /* ==========================================
@@ -156,6 +233,14 @@ if (requestForm && formStatus) {
 
                 if (typeof updateEquipmentFields === "function") {
                     updateEquipmentFields();
+                }
+
+                const descricaoField = document.getElementById("descricao");
+
+                if (descricaoField) {
+                    descricaoField.placeholder =
+                        descricaoField.dataset.placeholderDefault ||
+                        "Descreva sua necessidade ou o serviço que deseja contratar.";
                 }
 
             } else {
@@ -220,8 +305,20 @@ if (equipmentSelect && otherEquipmentField && otherEquipmentInput) {
 
     equipmentSelect.addEventListener("change", updateOtherEquipmentField);
 
+    equipmentSelect.addEventListener("change", function () {
+
+        const marcaModeloField = document.getElementById("marca-modelo");
+
+        if (marcaModeloField) {
+            marcaModeloField.value = "";
+        }
+
+    });
+
     updateOtherEquipmentField();
+
 }
+
 
 /* ==========================================
    ATENDIMENTO PRESENCIAL
@@ -240,6 +337,17 @@ if (attendanceSelect && presentialFields) {
     function updatePresentialFields() {
 
         const isPresential = attendanceSelect.value === "presencial";
+        const cepField = document.getElementById("cep");
+        const numeroField = document.getElementById("numero");
+
+        if (cepField) {
+            cepField.required = isPresential;
+        }
+
+        if (numeroField) {
+            numeroField.required = isPresential;
+        }
+
 
         if (isPresential) {
 
@@ -250,6 +358,7 @@ if (attendanceSelect && presentialFields) {
             cityInput.required = true;
             periodSelect.required = true;
 
+
         } else {
 
             presentialFields.style.display = "none";
@@ -259,13 +368,191 @@ if (attendanceSelect && presentialFields) {
             cityInput.required = false;
             periodSelect.required = false;
 
+            // Limpa todos os campos do endereço
+            presentialFields.querySelectorAll("input, select, textarea")
+                .forEach(function (campo) {
+
+                    if (campo.type === "checkbox") {
+                        campo.checked = false;
+                    } else {
+                        campo.value = "";
+                    }
+
+                });
+
+            // Restaura o campo Número para edição
+            const numeroField = document.getElementById("numero");
+
+            if (numeroField) {
+                numeroField.readOnly = false;
+                numeroField.required = false;
+            }
+
+            // Limpa a mensagem da consulta do CEP
+            const cepStatus = document.getElementById("cep-status");
+
+            if (cepStatus) {
+                cepStatus.textContent = "";
+            }
+
         }
+
 
     }
 
     attendanceSelect.addEventListener("change", updatePresentialFields);
 
     updatePresentialFields();
+}
+
+
+/* ==========================================
+   CONTROLE DO NÚMERO DO IMÓVEL
+========================================== */
+
+const numeroInput = document.getElementById("numero");
+const semNumeroCheckbox = document.getElementById("sem-numero");
+const modalidadeAtendimento = document.getElementById("atendimento");
+
+if (numeroInput && semNumeroCheckbox && modalidadeAtendimento) {
+
+    function atualizarNumeroImovel() {
+
+        const presencial =
+            modalidadeAtendimento.value === "presencial";
+
+        if (semNumeroCheckbox.checked) {
+            numeroInput.value = "S/N";
+            numeroInput.readOnly = true;
+        } else {
+            if (numeroInput.value === "S/N") {
+                numeroInput.value = "";
+            }
+
+            numeroInput.readOnly = false;
+        }
+
+        numeroInput.required = presencial;
+    }
+
+    semNumeroCheckbox.addEventListener("change", atualizarNumeroImovel);
+
+    modalidadeAtendimento.addEventListener("change", function () {
+        atualizarNumeroImovel();
+    });
+
+    atualizarNumeroImovel();
+}
+
+
+/* ==========================================
+   CONSULTA AUTOMÁTICA DE CEP - VIACEP
+========================================== */
+
+const cepInput = document.getElementById("cep");
+const cepStatus = document.getElementById("cep-status");
+const enderecoInput = document.getElementById("endereco");
+const bairroInput = document.getElementById("bairro");
+const cidadeInput = document.getElementById("cidade");
+
+if (cepInput && enderecoInput && bairroInput && cidadeInput) {
+
+    let consultaCepAtual = 0;
+
+    cepInput.addEventListener("input", async function () {
+
+        const cep = cepInput.value.replace(/\D/g, "").slice(0, 8);
+
+        // Formata automaticamente o CEP
+        cepInput.value = cep.length > 5
+            ? cep.slice(0, 5) + "-" + cep.slice(5)
+            : cep;
+
+        const consulta = ++consultaCepAtual;
+
+        // Limpa o endereço anterior ao modificar o CEP
+        enderecoInput.value = "";
+        bairroInput.value = "";
+        cidadeInput.value = "";
+
+        if (cepStatus) {
+            cepStatus.textContent = "";
+        }
+
+        if (cep.length !== 8) {
+            return;
+        }
+
+        if (cepStatus) {
+            cepStatus.textContent = "Consultando CEP...";
+        }
+
+        try {
+
+            const response = await fetch(
+                `https://viacep.com.br/ws/${cep}/json/`
+            );
+
+            if (!response.ok) {
+                throw new Error("Falha na consulta");
+            }
+
+            const dados = await response.json();
+
+            // Ignora consultas antigas ou atendimento não presencial
+            if (
+                consulta !== consultaCepAtual ||
+                document.getElementById("atendimento")?.value !== "presencial" ||
+                cepInput.value.replace(/\D/g, "") !== cep
+            ) {
+                return;
+            }
+
+            if (dados.erro) {
+
+                if (cepStatus) {
+                    cepStatus.textContent =
+                        "CEP não encontrado. Informe o endereço manualmente.";
+                }
+
+                return;
+            }
+
+            enderecoInput.value = dados.logradouro || "";
+            bairroInput.value = dados.bairro || "";
+
+            cidadeInput.value = dados.localidade
+                ? `${dados.localidade}-${dados.uf || ""}`
+                : "";
+
+
+            if (cepStatus) {
+                cepStatus.textContent =
+                    "Endereço localizado. Confira os dados antes de continuar.";
+            }
+
+
+        } catch (error) {
+
+            // Ignora consultas antigas ou atendimento não presencial
+            if (
+                consulta !== consultaCepAtual ||
+                document.getElementById("atendimento")?.value !== "presencial" ||
+                cepInput.value.replace(/\D/g, "") !== cep
+            ) {
+                return;
+            }
+
+            if (cepStatus) {
+                cepStatus.textContent =
+                    "Não foi possível consultar o CEP neste momento. " +
+                    "Verifique sua conexão ou preencha o endereço manualmente.";
+            }
+
+        }
+
+    });
+
 }
 
 
@@ -298,14 +585,38 @@ document.addEventListener("DOMContentLoaded", function () {
 
     };
 
+
     if (
         tipoSolicitacao.value === "contrato_mensal_ti" &&
         Object.prototype.hasOwnProperty.call(descricoes, plano)
     ) {
-
+        // Preenche automaticamente a descrição do plano
         descricao.value = descricoes[plano];
 
+        // Guarda o texto inserido automaticamente
+        let descricaoAutomatica = descricoes[plano];
+
+        // Identifica alterações feitas pelo próprio cliente
+        descricao.addEventListener("input", function () {
+            descricaoAutomatica = null;
+        });
+
+        // Verifica mudanças no serviço desejado
+        tipoSolicitacao.addEventListener("change", function () {
+
+            // Limpa somente se o texto ainda for o automático
+            if (
+                tipoSolicitacao.value !== "contrato_mensal_ti" &&
+                descricaoAutomatica !== null &&
+                descricao.value === descricaoAutomatica
+            ) {
+                descricao.value = "";
+                descricaoAutomatica = null;
+            }
+
+        });
     }
+
 
 });
 

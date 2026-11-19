@@ -226,13 +226,31 @@
 
                     <form class="request-form" action="https://formspree.io/f/xjybpjrb" method="POST">
 
-                        <h2>
-                            Solicitação de Atendimento
-                        </h2>
 
-                        <p class="form-intro">
-                            Os campos marcados com * são obrigatórios.
-                        </p>
+                        <!-- CABEÇALHO DO FORMULÁRIO -->
+                        <div class="form-header">
+
+                            <div class="form-header-icon">
+                                <i class="fa-solid fa-headset"></i>
+                            </div>
+
+                            <div class="form-header-content">
+
+                                <h2>Solicitação de Atendimento</h2>
+
+                                <p>
+                                    Conte com a L&G Tecnologia para encontrar
+                                    a solução ideal para sua necessidade.
+                                </p>
+
+                                <span class="form-header-notice">
+                                    <i class="fa-solid fa-circle-info"></i>
+                                    Os campos marcados com * são obrigatórios.
+                                </span>
+
+                            </div>
+
+                        </div>
 
 
                         <!-- DADOS DO CLIENTE -->
@@ -286,7 +304,6 @@
 
                         </div>
 
-
                         <!-- SOLICITAÇÃO -->
 
                         <div class="form-section-title">
@@ -304,84 +321,55 @@
 
                                 <select id="tipo-solicitacao" name="tipo_solicitacao" required>
 
-                                    <option value="">
-                                        Selecione o serviço desejado
+                                    <option value="">Selecione o serviço desejado</option>
+
+                                    <option value="backup">Backup e Segurança de Dados</option>
+
+                                    <option value="cftv">CFTV e Segurança Eletrônica</option>
+
+                                    <option value="consultoria">Consultoria em Tecnologia da Informação</option>
+
+                                    <option value="contrato_mensal_ti">Contrato Mensal de Suporte e Gestão de TI
                                     </option>
 
-                                    <option value="suporte">
-                                        Suporte Técnico de TI
-                                    </option>
+                                    <option value="controle-acesso">Controle de Acesso</option>
 
-                                    <option value="contrato_mensal_ti">
-                                        Contrato Mensal de Suporte e Gestão de TI
-                                    </option>
+                                    <option value="sites">Desenvolvimento de Sites</option>
 
-                                    <option value="manutencao">
-                                        Manutenção de Computadores e Notebooks
-                                    </option>
+                                    <option value="email-dominio">E-mail Corporativo e Domínios</option>
 
-                                    <option value="gestao-ti">
-                                        Gestão e Administração de TI
-                                    </option>
+                                    <option value="gestao-ti">Gestão e Administração de TI</option>
 
-                                    <option value="redes">
-                                        Redes, Wi-Fi e Infraestrutura
-                                    </option>
+                                    <option value="manutencao">Manutenção de Computadores e Notebooks</option>
 
-                                    <option value="servidores">
-                                        Servidores e Armazenamento
-                                    </option>
+                                    <option value="redes">Redes, Wi-Fi e Infraestrutura</option>
 
-                                    <option value="backup">
-                                        Backup e Segurança de Dados
-                                    </option>
+                                    <option value="orcamento">Solicitação de Orçamento</option>
 
-                                    <option value="cftv">
-                                        CFTV e Segurança Eletrônica
-                                    </option>
+                                    <option value="servidores">Servidores e Armazenamento</option>
 
-                                    <option value="controle-acesso">
-                                        Controle de Acesso
-                                    </option>
+                                    <option value="suporte">Suporte Técnico de TI</option>
 
-                                    <option value="email-dominio">
-                                        E-mail Corporativo e Domínios
-                                    </option>
+                                    <option value="equipamentos">Venda de Equipamentos e Soluções de TI</option>
 
-                                    <option value="sites">
-                                        Desenvolvimento de Sites
-                                    </option>
-
-                                    <option value="equipamentos">
-                                        Venda de Equipamentos e Soluções de TI
-                                    </option>
-
-                                    <option value="consultoria">
-                                        Consultoria em Tecnologia da Informação
-                                    </option>
-
-                                    <option value="orcamento">
-                                        Solicitação de Orçamento
-                                    </option>
-
-                                    <option value="outro">
-                                        Outro
-                                    </option>
+                                    <option value="outro">Outro</option>
 
                                 </select>
 
                             </div>
 
+                            <!-- DADOS PARA ATENDIMENTO PRESENCIAL -->
+
                             <div class="form-group">
 
                                 <label for="atendimento">
-                                    Modalidade preferida
+                                    Modalidade de atendimento *
                                 </label>
 
-                                <select id="atendimento" name="modalidade">
+                                <select id="atendimento" name="atendimento" required>
 
                                     <option value="">
-                                        Selecione
+                                        Selecione a modalidade
                                     </option>
 
                                     <option value="remoto">
@@ -392,17 +380,11 @@
                                         Atendimento Presencial
                                     </option>
 
-                                    <option value="avaliar">
-                                        A definir após avaliação
-                                    </option>
-
                                 </select>
 
                             </div>
 
                         </div>
-
-                        <!-- DADOS PARA ATENDIMENTO PRESENCIAL -->
 
                         <div id="presential-fields" style="display:none;">
 
@@ -413,17 +395,71 @@
 
                             <div class="form-grid">
 
+
+                                <!-- CEP -->
                                 <div class="form-group">
 
-                                    <label for="endereco">
-                                        Endereço *
+                                    <label for="cep">
+                                        CEP *
                                     </label>
 
-                                    <input type="text" id="endereco" name="endereco"
-                                        placeholder="Rua, avenida, número e complemento">
+
+                                    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9"
+                                        inputmode="numeric" autocomplete="postal-code" pattern="[0-9]{5}-[0-9]{3}"
+                                        title="Informe um CEP válido no formato 00000-000">
+
+
+                                    <small id="cep-status" aria-live="polite"></small>
 
                                 </div>
 
+                                <!-- ENDEREÇO -->
+                                <div class="form-group">
+
+                                    <label for="endereco">
+                                        Endereço / Logradouro *
+                                    </label>
+
+                                    <input type="text" id="endereco" name="endereco"
+                                        placeholder="Rua, avenida, travessa..." autocomplete="address-line1">
+
+                                </div>
+
+
+                                <!-- NÚMERO -->
+                                <div class="form-group address-number-group">
+
+                                    <label for="numero">
+                                        Número *
+                                    </label>
+
+                                    <input type="text" id="numero" name="numero" placeholder="Nº" maxlength="4"
+                                        inputmode="numeric" pattern="([0-9]{1,4}|S/N)">
+
+                                    <label class="address-no-number" for="sem-numero">
+
+                                        <input type="checkbox" id="sem-numero" name="sem_numero" value="Sim">
+
+                                        <span>Sem número (S/N)</span>
+
+                                    </label>
+
+                                </div>
+
+
+                                <!-- COMPLEMENTO -->
+                                <div class="form-group">
+
+                                    <label for="complemento">
+                                        Complemento
+                                    </label>
+
+                                    <input type="text" id="complemento" name="complemento"
+                                        placeholder="Bloco, apartamento, andar, sala..." autocomplete="address-line2">
+
+                                </div>
+
+                                <!-- BAIRRO -->
                                 <div class="form-group">
 
                                     <label for="bairro">
@@ -434,23 +470,15 @@
 
                                 </div>
 
+                                <!-- CIDADE / UF -->
                                 <div class="form-group">
 
                                     <label for="cidade">
-                                        Cidade *
+                                        Cidade / UF *
                                     </label>
 
-                                    <input type="text" id="cidade" name="cidade" placeholder="Ex.: Campo Grande">
-
-                                </div>
-
-                                <div class="form-group">
-
-                                    <label for="cep">
-                                        CEP
-                                    </label>
-
-                                    <input type="text" id="cep" name="cep" placeholder="00000-000" maxlength="9">
+                                    <input type="text" id="cidade" name="cidade" placeholder="Ex.: Campo Grande-MS"
+                                        autocomplete="off">
 
                                 </div>
 
@@ -549,40 +577,62 @@
                                             MacBook
                                         </option>
 
-                                        <option value="servidor">
-                                            Servidor
+                                        <option value="camera">
+                                            Câmera de Segurança
                                         </option>
 
-                                        <option value="impressora">
-                                            Impressora / Multifuncional
+
+                                        <option value="catraca">
+                                            Catraca Eletrônica
                                         </option>
 
-                                        <option value="roteador">
-                                            Roteador / Access Point
+                                        <option value="controladora-acesso">
+                                            Controladora de Acesso
                                         </option>
 
-                                        <option value="switch">
-                                            Switch de Rede
+                                        <option value="fechadura-eletronica">
+                                            Fechadura Eletrônica
+                                        </option>
+
+                                        <option value="leitor-biometrico">
+                                            Leitor Biométrico
+                                        </option>
+
+                                        <option value="leitor-facial">
+                                            Leitor Facial
+                                        </option>
+
+                                        <option value="teclado-rfid">
+                                            Teclado de Acesso / RFID
+                                        </option>
+
+
+                                        <option value="dvr-nvr">
+                                            DVR / NVR
                                         </option>
 
                                         <option value="firewall">
                                             Firewall
                                         </option>
 
-                                        <option value="camera">
-                                            Câmera de Segurança
-                                        </option>
-
-                                        <option value="dvr-nvr">
-                                            DVR / NVR
-                                        </option>
-
-                                        <option value="controle-acesso">
-                                            Controle de Acesso
+                                        <option value="impressora">
+                                            Impressora / Multifuncional
                                         </option>
 
                                         <option value="nobreak">
                                             Nobreak / UPS
+                                        </option>
+
+                                        <option value="roteador">
+                                            Roteador / Access Point
+                                        </option>
+
+                                        <option value="servidor">
+                                            Servidor
+                                        </option>
+
+                                        <option value="switch">
+                                            Switch de Rede
                                         </option>
 
                                         <option value="outro">
@@ -590,6 +640,7 @@
                                         </option>
 
                                     </select>
+
 
                                 </div>
 
@@ -634,7 +685,8 @@
                             </label>
 
                             <textarea id="descricao" name="descricao" rows="7"
-                                placeholder="Informe com detalhes o que está acontecendo ou o serviço que deseja contratar."
+                                placeholder="Descreva sua necessidade ou o serviço que deseja contratar."
+                                data-placeholder-default="Descreva sua necessidade ou o serviço que deseja contratar."
                                 required></textarea>
 
                         </div>
