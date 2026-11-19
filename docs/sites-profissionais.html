@@ -1,0 +1,1095 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>Criação de Sites Profissionais em Campo Grande | L&G Tecnologia</title>
+
+    <meta name="description"
+        content="Desenvolvimento de sites profissionais em Campo Grande/MS. Sites responsivos, domínio próprio, hospedagem e e-mail corporativo. Solicite uma proposta à L&G Tecnologia.">
+
+    <meta name="author" content="L&G Tecnologia">
+
+    <link rel="canonical" href="https://www.legtecnologia.com/sites-profissionais.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sites Profissionais | L&G Tecnologia">
+    <meta property="og:description"
+        content="Sites modernos, domínio próprio, hospedagem e e-mail corporativo para sua empresa.">
+    <meta property="og:url" content="https://www.legtecnologia.com/sites-profissionais.html">
+    <meta property="og:image" content="https://www.legtecnologia.com/images/og-lg-tecnologia.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="L&G Tecnologia">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME - CARREGAMENTO NÃO BLOQUEANTE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/hero.css"> -->
+    <!-- <link rel="stylesheet" href="css/services.css"> -->
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
+    <!-- <link rel="stylesheet" href="css/advantages.css"> -->
+    <!-- <link rel="stylesheet" href="css/process.css"> -->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+
+    <!-- CSS EXCLUSIVO -->
+    <link rel="stylesheet" href="css/sites-profissionais.css">
+
+    <!-- ESTILOS DE SEGURANÇA E ESTRUTURA INICIAL -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* APRESENTAÇÃO COMERCIAL */
+
+        .sites-hero {
+            background: linear-gradient(135deg,
+                    #101f35 0%,
+                    #183b61 100%);
+            padding: 100px 0;
+            color: #ffffff;
+        }
+
+        .sites-hero .sites-container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .sites-hero-content {
+            max-width: 850px;
+        }
+
+        .sites-hero-badge {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #a7d2ff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .sites-hero h1 {
+            color: #ffffff;
+            font-size: clamp(32px, 4vw, 54px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0 24px;
+        }
+
+        .sites-hero h1 span {
+            color: #69baff;
+        }
+
+        .sites-hero p {
+            color: #d8e5f5;
+            font-size: 17px;
+            line-height: 1.85;
+            margin-bottom: 30px;
+        }
+
+        .sites-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .sites-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 24px;
+            border-radius: 8px;
+            background: #1877d2;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .sites-action-btn:hover {
+            background: #2b91e8;
+            color: #ffffff;
+        }
+
+        .sites-action-btn-outline {
+            background: transparent;
+            border: 1px solid #84b7e6;
+        }
+
+        .sites-action-btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ==========================================
+   RESPONSIVIDADE - SITES PROFISSIONAIS
+========================================== */
+
+        @media (max-width: 768px) {
+
+            .sites-hero {
+                padding: 65px 0;
+            }
+
+            .sites-hero p {
+                font-size: 15px;
+            }
+
+            .sites-hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .sites-action-btn {
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="index.html#inicio" class="logo">
+                <img src="images/logo/logo-lg-otimizada.webp" alt="L&G Tecnologia">
+            </a>
+
+            <!-- MENU MOBILE -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- NAVEGAÇÃO -->
+            <nav id="menu-principal">
+
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li>
+                        <a href="index.html#contratos-ti">
+                            Contratos Mensais de TI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sites-profissionais.html" aria-current="page">
+                            Sites
+                        </a>
+                    </li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- BOTÃO DE CONTATO -->
+            <a href="solicitar-atendimento.html" class="btn header-contact-btn">
+                Fale Conosco
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
+
+    <main>
+
+        <!-- HERO - SITES PROFISSIONAIS -->
+
+        <section class="sites-hero">
+
+            <div class="sites-container">
+
+                <div class="sites-hero-content">
+
+                    <span class="sites-hero-badge">
+                        PRESENÇA DIGITAL PARA EMPRESAS
+                    </span>
+
+                    <h1>
+                        Sua empresa merece um
+                        <span>site profissional</span>
+                        que transmite confiança
+                        e gera oportunidades.
+                    </h1>
+
+                    <p>
+                        Desenvolvemos sites modernos,
+                        responsivos e personalizados
+                        para fortalecer a presença
+                        digital da sua empresa.
+
+                        Oferecemos soluções completas
+                        em desenvolvimento de sites,
+                        registro de domínios,
+                        hospedagem e e-mail corporativo.
+                    </p>
+
+                    <div class="sites-hero-actions">
+
+                        <a href="solicitar-atendimento.html?servico=sites" class="sites-action-btn">
+
+                            <i class="fa-solid fa-file-signature"></i>
+                            Solicitar Orçamento
+
+                        </a>
+
+                        <a href="#modelos" class="sites-action-btn sites-action-btn-outline">
+
+                            <i class="fa-solid fa-desktop"></i>
+                            Conhecer Modelos
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     GALERIA DE MODELOS DE SITES
+========================================== -->
+
+        <section class="sites-modelos" id="modelos">
+
+            <div class="sites-container">
+
+                <div class="sites-section-heading">
+
+                    <span class="sites-section-badge">
+                        SOLUÇÕES EM DESENVOLVIMENTO WEB
+                    </span>
+
+                    <h2>
+                        O site ideal para apresentar
+                        sua empresa ao mundo.
+                    </h2>
+
+                    <p>
+                        Cada empresa possui necessidades diferentes.
+                        Desenvolvemos soluções digitais personalizadas,
+                        com design moderno, navegação intuitiva e
+                        adaptação para computadores, tablets e celulares.
+                    </p>
+
+                </div>
+
+                <div class="sites-modelos-grid">
+
+                    <!-- MODELO 1 - SITE INSTITUCIONAL -->
+
+                    <article class="sites-modelo-card">
+
+                        <div class="sites-modelo-imagem">
+                            <img src="images/sites/modelo-institucional-otimizado.webp"
+                                alt="Exemplo demonstrativo de site institucional" loading="lazy">
+                        </div>
+
+                        <div class="sites-modelo-conteudo">
+
+                            <span class="sites-modelo-tipo">
+                                MODELO DEMONSTRATIVO
+                            </span>
+
+                            <h3>Sites Institucionais</h3>
+
+                            <p>
+                                Apresente sua empresa, seus serviços,
+                                diferenciais e informações de contato
+                                em um ambiente digital profissional.
+                            </p>
+
+                            <a href="solicitar-atendimento.html?servico=sites" class="sites-modelo-link">
+                                Solicitar um projeto
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- MODELO 2 - CATÁLOGO DIGITAL -->
+
+                    <article class="sites-modelo-card">
+
+                        <div class="sites-modelo-imagem">
+                            <img src="images/sites/modelo-catalogo-otimizado.webp"
+                                alt="Exemplo demonstrativo de catálogo digital" loading="lazy">
+                        </div>
+
+                        <div class="sites-modelo-conteudo">
+
+                            <span class="sites-modelo-tipo">
+                                MODELO DEMONSTRATIVO
+                            </span>
+
+                            <h3>Catálogos Digitais</h3>
+
+                            <p>
+                                Exiba seus produtos ou serviços
+                                de maneira organizada, com imagens,
+                                descrições e integração com canais
+                                de atendimento comercial.
+                            </p>
+
+                            <a href="solicitar-atendimento.html?servico=sites" class="sites-modelo-link">
+                                Solicitar um projeto
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                    <!-- MODELO 3 - LANDING PAGE -->
+
+                    <article class="sites-modelo-card">
+
+                        <div class="sites-modelo-imagem">
+                            <img src="images/sites/modelo-landing-page-otimizado.webp"
+                                alt="Exemplo demonstrativo de landing page" loading="lazy">
+                        </div>
+
+                        <div class="sites-modelo-conteudo">
+
+                            <span class="sites-modelo-tipo">
+                                MODELO DEMONSTRATIVO
+                            </span>
+
+                            <h3>Landing Pages</h3>
+
+                            <p>
+                                Páginas desenvolvidas para destacar
+                                produtos, serviços ou campanhas,
+                                facilitando a captação de contatos
+                                e oportunidades comerciais.
+                            </p>
+
+                            <a href="solicitar-atendimento.html?servico=sites" class="sites-modelo-link">
+                                Solicitar um projeto
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </a>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     SOLUÇÕES DIGITAIS COMPLEMENTARES
+========================================== -->
+
+        <section class="sites-solucoes" id="solucoes-digitais">
+
+            <div class="sites-container">
+
+                <div class="sites-section-heading">
+
+                    <span class="sites-section-badge">
+                        SOLUÇÕES DIGITAIS COMPLETAS
+                    </span>
+
+                    <h2>
+                        Muito além de um site profissional.
+                    </h2>
+
+                    <p>
+                        Sua empresa precisa de uma presença digital
+                        estruturada, segura e profissional.
+                        A L&G Tecnologia oferece soluções integradas
+                        para facilitar a implantação e a gestão
+                        dos seus serviços digitais.
+                    </p>
+
+                </div>
+
+                <div class="sites-solucoes-grid">
+
+                    <!-- DOMÍNIO -->
+
+                    <article class="sites-solucao-card">
+
+                        <div class="sites-solucao-icon">
+                            <i class="fa-solid fa-globe"></i>
+                        </div>
+
+                        <h3>Domínio Próprio</h3>
+
+                        <p>
+                            Fortaleça a identidade da sua empresa
+                            com um endereço exclusivo na internet,
+                            facilitando o reconhecimento da marca
+                            e o acesso dos seus clientes.
+                        </p>
+
+                        <span class="sites-solucao-exemplo">
+                            www.suaempresa.com.br
+                        </span>
+
+                    </article>
+
+                    <!-- HOSPEDAGEM -->
+
+                    <article class="sites-solucao-card">
+
+                        <div class="sites-solucao-icon">
+                            <i class="fa-solid fa-server"></i>
+                        </div>
+
+                        <h3>Hospedagem de Sites</h3>
+
+                        <p>
+                            Conte com uma estrutura de hospedagem
+                            adequada às necessidades do seu projeto,
+                            com configuração técnica e acompanhamento
+                            dos serviços contratados.
+                        </p>
+
+                        <span class="sites-solucao-exemplo">
+                            Infraestrutura para sua presença online
+                        </span>
+
+                    </article>
+
+                    <!-- E-MAIL CORPORATIVO -->
+
+                    <article class="sites-solucao-card">
+
+                        <div class="sites-solucao-icon">
+                            <i class="fa-solid fa-envelope-open-text"></i>
+                        </div>
+
+                        <h3>E-mail Corporativo</h3>
+
+                        <p>
+                            Transmita mais credibilidade utilizando
+                            contas de e-mail personalizadas com
+                            o domínio da sua empresa, incluindo
+                            configuração e suporte técnico.
+                        </p>
+
+                        <span class="sites-solucao-exemplo">
+                            contato@suaempresa.com.br
+                        </span>
+
+                    </article>
+
+                </div>
+
+                <!-- CHAMADA COMERCIAL -->
+
+                <div class="sites-solucoes-cta">
+
+                    <div class="sites-solucoes-cta-texto">
+
+                        <h3>
+                            Sua empresa conectada,
+                            do domínio ao site profissional.
+                        </h3>
+
+                        <p>
+                            Centralize o desenvolvimento e a
+                            configuração dos seus serviços digitais
+                            com o acompanhamento técnico
+                            da L&G Tecnologia.
+                        </p>
+
+                    </div>
+
+                    <a href="solicitar-atendimento.html?servico=sites" class="sites-action-btn">
+
+                        <i class="fa-solid fa-file-signature"></i>
+                        Solicitar uma Proposta
+
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- ==========================================
+     BENEFÍCIOS DE UM SITE PROFISSIONAL
+========================================== -->
+
+        <section class="sites-beneficios" id="beneficios">
+
+            <div class="sites-container">
+
+                <div class="sites-beneficios-layout">
+
+                    <!-- APRESENTAÇÃO -->
+
+                    <div class="sites-beneficios-intro">
+
+                        <span class="sites-section-badge">
+                            VALORIZE SUA PRESENÇA DIGITAL
+                        </span>
+
+                        <h2>
+                            Seu site é a vitrine digital
+                            da sua empresa.
+                        </h2>
+
+                        <p>
+                            Um site profissional vai muito além
+                            de apresentar informações. Ele ajuda
+                            a fortalecer sua marca, transmitir
+                            confiança e facilitar o contato
+                            com novos clientes.
+                        </p>
+
+                        <a href="solicitar-atendimento.html?servico=sites" class="sites-beneficios-link">
+
+                            Quero um site profissional
+                            <i class="fa-solid fa-arrow-right"></i>
+
+                        </a>
+
+                    </div>
+
+                    <!-- LISTA DE BENEFÍCIOS -->
+
+                    <div class="sites-beneficios-lista">
+
+                        <div class="sites-beneficio-item">
+
+                            <div class="sites-beneficio-icon">
+                                <i class="fa-solid fa-shield-halved"></i>
+                            </div>
+
+                            <div>
+                                <h3>Mais credibilidade</h3>
+                                <p>
+                                    Apresente sua empresa com uma
+                                    identidade digital profissional
+                                    e transmita mais confiança
+                                    aos seus clientes.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sites-beneficio-item">
+
+                            <div class="sites-beneficio-icon">
+                                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                            </div>
+
+                            <div>
+                                <h3>Mais visibilidade</h3>
+                                <p>
+                                    Amplie as possibilidades de
+                                    sua empresa ser encontrada
+                                    por pessoas que procuram
+                                    seus produtos ou serviços.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sites-beneficio-item">
+
+                            <div class="sites-beneficio-icon">
+                                <i class="fa-solid fa-mobile-screen-button"></i>
+                            </div>
+
+                            <div>
+                                <h3>Experiência em qualquer dispositivo</h3>
+                                <p>
+                                    Ofereça uma navegação adaptada
+                                    a computadores, tablets
+                                    e smartphones.
+                                </p>
+                            </div>
+
+                        </div>
+
+                        <div class="sites-beneficio-item">
+
+                            <div class="sites-beneficio-icon">
+                                <i class="fa-solid fa-chart-line"></i>
+                            </div>
+
+                            <div>
+                                <h3>Novas oportunidades comerciais</h3>
+                                <p>
+                                    Facilite o acesso às informações
+                                    da sua empresa e incentive
+                                    novos contatos e solicitações
+                                    de orçamento.
+                                </p>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     PROCESSO DE DESENVOLVIMENTO DE SITES
+========================================== -->
+
+        <section class="sites-etapas" id="etapas">
+
+            <div class="sites-container">
+
+                <!-- APRESENTAÇÃO -->
+
+                <div class="sites-section-heading sites-etapas-heading">
+
+                    <span class="sites-section-badge">
+                        DO PLANEJAMENTO À PUBLICAÇÃO
+                    </span>
+
+                    <h2>
+                        Como desenvolvemos seu site profissional.
+                    </h2>
+
+                    <p>
+                        Cada projeto é desenvolvido de forma
+                        organizada, respeitando as características
+                        da sua empresa e seus objetivos.
+                        Conheça as principais etapas do nosso
+                        processo de desenvolvimento.
+                    </p>
+
+                </div>
+
+                <!-- LINHA DO TEMPO -->
+
+                <div class="sites-etapas-grid">
+
+                    <!-- ETAPA 01 -->
+
+                    <article class="sites-etapa-item">
+
+                        <div class="sites-etapa-numero">
+                            01
+                        </div>
+
+                        <div class="sites-etapa-conteudo">
+
+                            <div class="sites-etapa-icon">
+                                <i class="fa-solid fa-comments"></i>
+                            </div>
+
+                            <h3>Entendimento</h3>
+
+                            <p>
+                                Conversamos sobre sua empresa,
+                                seus serviços, público-alvo
+                                e objetivos com o novo site.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ETAPA 02 -->
+
+                    <article class="sites-etapa-item">
+
+                        <div class="sites-etapa-numero">
+                            02
+                        </div>
+
+                        <div class="sites-etapa-conteudo">
+
+                            <div class="sites-etapa-icon">
+                                <i class="fa-solid fa-pen-ruler"></i>
+                            </div>
+
+                            <h3>Planejamento</h3>
+
+                            <p>
+                                Definimos a estrutura, as páginas,
+                                os recursos e a proposta visual
+                                mais adequada ao projeto.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ETAPA 03 -->
+
+                    <article class="sites-etapa-item">
+
+                        <div class="sites-etapa-numero">
+                            03
+                        </div>
+
+                        <div class="sites-etapa-conteudo">
+
+                            <div class="sites-etapa-icon">
+                                <i class="fa-solid fa-code"></i>
+                            </div>
+
+                            <h3>Desenvolvimento</h3>
+
+                            <p>
+                                Construímos o site com atenção
+                                ao design, à navegação
+                                e à adaptação para
+                                diferentes dispositivos.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ETAPA 04 -->
+
+                    <article class="sites-etapa-item">
+
+                        <div class="sites-etapa-numero">
+                            04
+                        </div>
+
+                        <div class="sites-etapa-conteudo">
+
+                            <div class="sites-etapa-icon">
+                                <i class="fa-solid fa-list-check"></i>
+                            </div>
+
+                            <h3>Revisão e Testes</h3>
+
+                            <p>
+                                Verificamos o funcionamento
+                                das páginas, dos links
+                                e dos principais recursos
+                                antes da publicação.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ETAPA 05 -->
+
+                    <article class="sites-etapa-item">
+
+                        <div class="sites-etapa-numero">
+                            05
+                        </div>
+
+                        <div class="sites-etapa-conteudo">
+
+                            <div class="sites-etapa-icon">
+                                <i class="fa-solid fa-rocket"></i>
+                            </div>
+
+                            <h3>Publicação</h3>
+
+                            <p>
+                                Realizamos os procedimentos
+                                necessários para disponibilizar
+                                o site na internet,
+                                conforme os serviços contratados.
+                            </p>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==========================================
+     CHAMADA COMERCIAL FINAL
+     L&G TECNOLOGIA
+========================================== -->
+
+        <section class="sites-cta-final" id="solicitar-site">
+
+            <div class="sites-container">
+
+                <div class="sites-cta-final-layout">
+
+                    <!-- CONTEÚDO COMERCIAL -->
+
+                    <div class="sites-cta-final-conteudo">
+
+                        <span class="sites-cta-final-badge">
+                            VAMOS TIRAR SEU PROJETO DO PAPEL?
+                        </span>
+
+                        <h2>
+                            Sua empresa merece
+                            uma presença digital
+                            à altura do seu negócio.
+                        </h2>
+
+                        <p>
+                            Transforme suas ideias em um site
+                            moderno, profissional e preparado
+                            para apresentar sua empresa
+                            com credibilidade.
+
+                            Conte com a L&G Tecnologia para
+                            desenvolver uma solução alinhada
+                            às necessidades do seu negócio.
+                        </p>
+
+                        <!-- BOTÕES -->
+
+                        <div class="sites-cta-final-acoes">
+
+                            <a href="solicitar-atendimento.html?servico=sites"
+                                class="sites-cta-final-btn sites-cta-final-btn-primary">
+
+                                <i class="fa-solid fa-file-circle-check"></i>
+                                Solicitar Orçamento
+
+                            </a>
+
+                            <a href="https://wa.me/5567992825117?text=Ol%C3%A1%21%20Gostaria%20de%20conversar%20sobre%20o%20desenvolvimento%20de%20um%20site%20profissional."
+                                class="sites-cta-final-btn sites-cta-final-btn-whatsapp" target="_blank"
+                                rel="noopener noreferrer">
+
+                                <i class="fa-brands fa-whatsapp"></i>
+                                Conversar pelo WhatsApp
+
+                            </a>
+
+                        </div>
+
+                        <p class="sites-cta-final-observacao">
+                            Atendimento personalizado para entender
+                            as necessidades do seu projeto.
+                        </p>
+
+                    </div>
+
+                    <!-- ELEMENTO VISUAL -->
+
+                    <div class="sites-cta-final-visual" aria-hidden="true">
+
+                        <div class="sites-cta-final-visual-icon">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+
+                        <div class="sites-cta-final-visual-texto">
+
+                            <span>
+                                L&G TECNOLOGIA
+                            </span>
+
+                            <strong>
+                                Soluções digitais
+                                para sua empresa.
+                            </strong>
+
+                        </div>
+
+                        <div class="sites-cta-final-visual-detalhe">
+                            <i class="fa-solid fa-circle-check"></i>
+                            Desenvolvimento profissional
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+
+    </main>
+
+
+    <!-- ==========================================
+     RODAPÉ INSTITUCIONAL
+     L&G TECNOLOGIA
+========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- LOGOTIPO E DESCRIÇÃO -->
+
+            <div class="footer-brand">
+
+                <img src="images/logo/logo-lg-contorno.png" alt="L&G Tecnologia" class="footer-logo">
+
+                <p>
+                    Conectando empresas à tecnologia com
+                    soluções inteligentes, seguras e eficientes.
+                </p>
+
+            </div>
+
+            <!-- INFORMAÇÕES DE CONTATO -->
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a href="tel:+5567992825117">
+                    <i class="fa-solid fa-phone"></i>
+                    (67) 99282-5117
+                </a>
+
+                <a href="mailto:suporte@legtecnologia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    suporte@legtecnologia.com
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Campo Grande – MS
+                </span>
+
+            </div>
+
+            <!-- HORÁRIOS DE ATENDIMENTO -->
+
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <div class="footer-schedule">
+
+                    <div class="schedule-row">
+
+                        <strong>Segunda a sexta</strong>
+
+                        <span>
+                            07h30–11h00<br>
+                            13h00–18h00
+                        </span>
+
+                    </div>
+
+                    <div class="schedule-row">
+
+                        <strong>Sábado</strong>
+
+                        <span>
+                            08h00–11h00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- DIREITOS AUTORAIS -->
+
+        <div class="footer-copy">
+
+            <div class="container">
+
+                &copy; <span id="year"></span>
+                <strong>L&amp;G Tecnologia</strong>
+                • Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+     WHATSAPP FLUTUANTE
+========================================== -->
+
+    <a href="https://wa.me/5567992825117?text=Ol%C3%A1%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a L&G Tecnologia pelo WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

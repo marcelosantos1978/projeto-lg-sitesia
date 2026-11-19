@@ -1,0 +1,1076 @@
+/* ==========================================================
+   L&G TECNOLOGIA
+   PÁGINA: SITES PROFISSIONAIS
+
+   Desenvolvimento de Sites
+   Domínios | Hospedagem | E-mail Corporativo
+
+   Estilos exclusivos da página comercial
+========================================================== */
+
+/* ==========================================
+   CORREÇÃO DO DESLOCAMENTO DO CABEÇALHO
+========================================== */
+
+/* Regra temporariamente desativada para teste */
+
+/*
+html {
+    overflow-y: scroll;
+}
+*/
+
+/* ==========================================================
+   GALERIA DE MODELOS DE SITES
+========================================================== */
+
+.sites-modelos {
+    background: #f4f8fc;
+    padding: 100px 0;
+}
+
+.sites-modelos .sites-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+/* TÍTULO DA SEÇÃO */
+
+.sites-section-heading {
+    max-width: 850px;
+    margin-bottom: 50px;
+}
+
+.sites-section-badge {
+    display: inline-block;
+    padding: 9px 16px;
+    margin-bottom: 22px;
+    background: #e5f1ff;
+    color: #1877d2;
+    border-radius: 30px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+}
+
+.sites-section-heading h2 {
+    font-size: clamp(28px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.3;
+    color: #14243a;
+    margin-bottom: 22px;
+}
+
+.sites-section-heading p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #526b87;
+}
+
+/* GRADE DOS CARDS */
+
+.sites-modelos-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* CARDS */
+
+.sites-modelo-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    overflow: hidden;
+    background: #ffffff;
+    border: 1px solid #e0eaf4;
+    border-radius: 14px;
+    box-shadow: 0 8px 28px rgba(17, 36, 61, 0.06);
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sites-modelo-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 38px rgba(17, 36, 61, 0.13);
+}
+
+/* THUMBNAILS */
+
+.sites-modelo-imagem {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    overflow: hidden;
+    background: #ffffff;
+    border-radius: 14px 14px 0 0;
+}
+
+.sites-modelo-imagem img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 14px 14px 0 0;
+    transition: none;
+}
+
+.sites-modelo-card:hover .sites-modelo-imagem img {
+    transform: none;
+}
+
+/* CONTEÚDO DOS CARDS */
+
+.sites-modelo-conteudo {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 28px;
+}
+
+.sites-modelo-tipo {
+    color: #1877d2;
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    margin-bottom: 12px;
+}
+
+.sites-modelo-conteudo h3 {
+    font-size: 21px;
+    font-weight: 700;
+    color: #14243a;
+    margin-bottom: 15px;
+}
+
+.sites-modelo-conteudo p {
+    color: #526b87;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+.sites-modelo-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: auto;
+    color: #1877d2;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.sites-modelo-link:hover {
+    color: #0c4e8a;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+
+    .sites-modelos-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sites-modelos {
+        padding: 65px 0;
+    }
+
+    .sites-section-heading {
+        margin-bottom: 35px;
+    }
+
+    .sites-modelos-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .sites-modelo-conteudo {
+        padding: 24px;
+    }
+
+}
+
+
+/* ==========================================================
+   SOLUÇÕES DIGITAIS - DOMÍNIO, HOSPEDAGEM E E-MAIL
+========================================================== */
+
+.sites-solucoes {
+    background: #ffffff;
+    padding: 100px 0;
+}
+
+.sites-solucoes .sites-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+/* GRADE DE SOLUÇÕES */
+
+.sites-solucoes-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 28px;
+}
+
+/* CARDS */
+
+.sites-solucao-card {
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+    padding: 35px 30px;
+    background: #f7faff;
+    border: 1px solid #e0eaf4;
+    border-radius: 14px;
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sites-solucao-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(17, 36, 61, 0.09);
+}
+
+/* ÍCONES */
+
+.sites-solucao-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 66px;
+    height: 66px;
+    margin-bottom: 25px;
+    background: #e5f1ff;
+    color: #1877d2;
+    border-radius: 14px;
+    font-size: 27px;
+}
+
+/* TEXTOS */
+
+.sites-solucao-card h3 {
+    color: #14243a;
+    font-size: 21px;
+    font-weight: 700;
+    margin-bottom: 16px;
+}
+
+.sites-solucao-card p {
+    color: #526b87;
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 25px;
+}
+
+/* EXEMPLOS */
+
+.sites-solucao-exemplo {
+    display: block;
+    margin-top: auto;
+    padding: 13px 15px;
+    background: #eaf3ff;
+    color: #176cb5;
+    border-radius: 8px;
+    font-size: 12px;
+    font-weight: 600;
+    overflow-wrap: anywhere;
+}
+
+/* CHAMADA COMERCIAL */
+
+.sites-solucoes-cta {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+    margin-top: 45px;
+    padding: 35px 40px;
+    background: linear-gradient(135deg, #11243d, #183b61);
+    border-radius: 14px;
+}
+
+.sites-solucoes-cta-texto {
+    max-width: 700px;
+}
+
+.sites-solucoes-cta h3 {
+    color: #ffffff;
+    font-size: clamp(22px, 2.5vw, 28px);
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.sites-solucoes-cta p {
+    color: #d8e5f5;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.sites-solucoes-cta .sites-action-btn {
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+/* RESPONSIVIDADE */
+
+@media (max-width: 992px) {
+
+    .sites-solucoes-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .sites-solucoes-cta {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sites-solucoes {
+        padding: 65px 0;
+    }
+
+    .sites-solucoes-grid {
+        grid-template-columns: 1fr;
+        gap: 24px;
+    }
+
+    .sites-solucao-card {
+        padding: 28px 24px;
+    }
+
+    .sites-solucoes-cta {
+        padding: 28px 24px;
+        gap: 24px;
+    }
+
+    .sites-solucoes-cta .sites-action-btn {
+        width: 100%;
+        white-space: normal;
+        text-align: center;
+    }
+
+}
+
+/* ==========================================================
+   CABEÇALHO FIXO - PÁGINA SITES PROFISSIONAIS
+========================================================== */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+}
+
+
+/* ==========================================================
+   BENEFÍCIOS DE UM SITE PROFISSIONAL
+   L&G TECNOLOGIA
+========================================================== */
+
+.sites-beneficios {
+    background: #f4f8fc;
+    padding: 110px 0;
+}
+
+.sites-beneficios .sites-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+/* LAYOUT EM DUAS COLUNAS */
+
+.sites-beneficios-layout {
+    display: grid;
+    grid-template-columns: 0.9fr 1.1fr;
+    align-items: center;
+    gap: 85px;
+}
+
+/* COLUNA ESQUERDA */
+
+.sites-beneficios-intro {
+    max-width: 480px;
+}
+
+.sites-beneficios-intro h2 {
+    color: #14243a;
+    font-size: clamp(30px, 3vw, 42px);
+    font-weight: 800;
+    line-height: 1.3;
+    margin-bottom: 25px;
+}
+
+.sites-beneficios-intro>p {
+    color: #526b87;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 32px;
+}
+
+/* LINK COMERCIAL */
+
+.sites-beneficios-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+    color: #1877d2;
+    font-size: 15px;
+    font-weight: 700;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.sites-beneficios-link:hover {
+    color: #0c4e8a;
+}
+
+.sites-beneficios-link i {
+    transition: transform 0.3s ease;
+}
+
+.sites-beneficios-link:hover i {
+    transform: translateX(5px);
+}
+
+/* COLUNA DIREITA */
+
+.sites-beneficios-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+/* CADA BENEFÍCIO */
+
+.sites-beneficio-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 22px;
+    padding: 24px 26px;
+    background: #ffffff;
+    border: 1px solid #e0eaf4;
+    border-left: 4px solid #1877d2;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px rgba(17, 36, 61, 0.04);
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sites-beneficio-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 10px 28px rgba(17, 36, 61, 0.09);
+}
+
+/* ÍCONES */
+
+.sites-beneficio-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 52px;
+    height: 52px;
+    background: #e5f1ff;
+    color: #1877d2;
+    border-radius: 12px;
+    font-size: 21px;
+}
+
+/* TEXTOS DOS BENEFÍCIOS */
+
+.sites-beneficio-item h3 {
+    color: #14243a;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 9px;
+}
+
+.sites-beneficio-item p {
+    color: #526b87;
+    font-size: 14px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* TABLETS */
+
+@media (max-width: 992px) {
+
+    .sites-beneficios-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .sites-beneficios-intro {
+        max-width: 750px;
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .sites-beneficios {
+        padding: 70px 0;
+    }
+
+    .sites-beneficios-layout {
+        gap: 35px;
+    }
+
+    .sites-beneficio-item {
+        gap: 16px;
+        padding: 22px 18px;
+    }
+
+    .sites-beneficio-icon {
+        width: 45px;
+        height: 45px;
+        font-size: 19px;
+    }
+
+    .sites-beneficio-item h3 {
+        font-size: 16px;
+    }
+
+    .sites-beneficio-item p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================================
+   PROCESSO DE DESENVOLVIMENTO DE SITES
+   LINHA DO TEMPO - L&G TECNOLOGIA
+========================================================== */
+
+.sites-etapas {
+    background: #ffffff;
+    padding: 105px 0 115px;
+}
+
+.sites-etapas .sites-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+/* APRESENTAÇÃO DA SEÇÃO */
+
+.sites-etapas-heading {
+    max-width: 850px;
+    margin-bottom: 65px;
+}
+
+/* LINHA DO TEMPO */
+
+.sites-etapas-grid {
+    display: grid;
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+    gap: 22px;
+    position: relative;
+    isolation: isolate;
+}
+
+/* LINHA CONECTANDO AS ETAPAS */
+
+.sites-etapas-grid::before {
+    content: "";
+    position: absolute;
+    top: 28px;
+    left: 10%;
+    right: 10%;
+    height: 3px;
+    background: linear-gradient(90deg,
+            #1877d2,
+            #72b9f5);
+    z-index: -1;
+}
+
+/* CADA ETAPA */
+
+.sites-etapa-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-width: 0;
+    text-align: center;
+}
+
+/* NUMERAÇÃO */
+
+.sites-etapa-numero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 25px;
+    border: 4px solid #ffffff;
+    border-radius: 50%;
+    background: #1877d2;
+    color: #ffffff;
+    font-size: 17px;
+    font-weight: 800;
+    box-shadow: 0 5px 16px rgba(24, 119, 210, 0.22);
+    position: relative;
+    z-index: 1;
+    flex-shrink: 0;
+}
+
+/* CONTEÚDO */
+
+.sites-etapa-conteudo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 30px 17px;
+    background: #f7faff;
+    border: 1px solid #e0eaf4;
+    border-radius: 14px;
+    transition: transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+.sites-etapa-item:hover .sites-etapa-conteudo {
+    transform: translateY(-5px);
+    border-color: #b6d8f5;
+    box-shadow: 0 14px 30px rgba(17, 36, 61, 0.09);
+}
+
+/* ÍCONES */
+
+.sites-etapa-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 58px;
+    height: 58px;
+    margin-bottom: 22px;
+    background: #e5f1ff;
+    color: #1877d2;
+    border-radius: 14px;
+    font-size: 24px;
+}
+
+/* TÍTULOS */
+
+.sites-etapa-conteudo h3 {
+    color: #14243a;
+    font-size: 17px;
+    font-weight: 700;
+    line-height: 1.4;
+    margin-bottom: 14px;
+}
+
+/* DESCRIÇÕES */
+
+.sites-etapa-conteudo p {
+    color: #526b87;
+    font-size: 13px;
+    line-height: 1.75;
+    margin: 0;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+/* TABLETS */
+
+@media (max-width: 992px) {
+
+    .sites-etapas-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        gap: 30px 20px;
+    }
+
+    .sites-etapas-grid::before {
+        display: none;
+    }
+
+    .sites-etapa-numero {
+        margin-bottom: 15px;
+    }
+
+}
+
+/* CELULARES */
+
+@media (max-width: 768px) {
+
+    .sites-etapas {
+        padding: 70px 0;
+    }
+
+    .sites-etapas-heading {
+        margin-bottom: 40px;
+    }
+
+    .sites-etapas-grid {
+        grid-template-columns: 1fr;
+        gap: 22px;
+    }
+
+    .sites-etapa-item {
+        flex-direction: row;
+        align-items: stretch;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .sites-etapa-numero {
+        width: 48px;
+        height: 48px;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .sites-etapa-conteudo {
+        align-items: flex-start;
+        padding: 22px;
+    }
+
+    .sites-etapa-icon {
+        width: 48px;
+        height: 48px;
+        margin-bottom: 15px;
+        font-size: 20px;
+    }
+
+    .sites-etapa-conteudo h3 {
+        font-size: 17px;
+    }
+
+    .sites-etapa-conteudo p {
+        font-size: 13px;
+    }
+
+}
+
+
+/* ==========================================================
+   CHAMADA COMERCIAL FINAL
+   L&G TECNOLOGIA
+========================================================== */
+
+.sites-cta-final {
+    position: relative;
+    overflow: hidden;
+    padding: 110px 0;
+    background: linear-gradient(135deg,
+            #0d1d33 0%,
+            #142d4b 55%,
+            #194a78 100%);
+}
+
+/* DETALHE DECORATIVO DE FUNDO */
+
+.sites-cta-final::before {
+    content: "";
+    position: absolute;
+    width: 480px;
+    height: 480px;
+    right: -180px;
+    top: -200px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(70, 168, 255, 0.15),
+            transparent 70%);
+    pointer-events: none;
+}
+
+.sites-cta-final .sites-container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+    position: relative;
+    z-index: 1;
+}
+
+/* LAYOUT PRINCIPAL */
+
+.sites-cta-final-layout {
+    display: grid;
+    grid-template-columns: 1.15fr 0.85fr;
+    align-items: center;
+    gap: 70px;
+}
+
+/* CONTEÚDO ESQUERDO */
+
+.sites-cta-final-conteudo {
+    min-width: 0;
+}
+
+.sites-cta-final-badge {
+    display: inline-block;
+    padding: 9px 16px;
+    margin-bottom: 25px;
+    border: 1px solid rgba(143, 204, 255, 0.25);
+    border-radius: 30px;
+    background: rgba(70, 168, 255, 0.10);
+    color: #a9d7ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.sites-cta-final-conteudo h2 {
+    color: #ffffff;
+    font-size: clamp(30px, 3.3vw, 45px);
+    font-weight: 800;
+    line-height: 1.25;
+    margin-bottom: 25px;
+}
+
+.sites-cta-final-conteudo>p:not(.sites-cta-final-observacao) {
+    max-width: 620px;
+    color: #d8e5f5;
+    font-size: 16px;
+    line-height: 1.9;
+    margin-bottom: 35px;
+}
+
+/* BOTÕES DE AÇÃO */
+
+.sites-cta-final-acoes {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 22px;
+}
+
+.sites-cta-final-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    min-height: 52px;
+    padding: 14px 22px;
+    border-radius: 9px;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 1.4;
+    text-align: center;
+    text-decoration: none;
+    transition:
+        background 0.3s ease,
+        border-color 0.3s ease,
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.sites-cta-final-btn:hover {
+    transform: translateY(-3px);
+}
+
+/* BOTÃO PRINCIPAL */
+
+.sites-cta-final-btn-primary {
+    background: #1877d2;
+    color: #ffffff;
+    border: 1px solid #3997ee;
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.14);
+}
+
+.sites-cta-final-btn-primary:hover {
+    background: #2b91e8;
+    color: #ffffff;
+    box-shadow: 0 12px 28px rgba(0, 0, 0, 0.20);
+}
+
+/* BOTÃO WHATSAPP */
+
+.sites-cta-final-btn-whatsapp {
+    background: rgba(255, 255, 255, 0.06);
+    color: #ffffff;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+}
+
+.sites-cta-final-btn-whatsapp:hover {
+    background: rgba(255, 255, 255, 0.13);
+    border-color: rgba(255, 255, 255, 0.65);
+    color: #ffffff;
+}
+
+.sites-cta-final-btn-whatsapp i {
+    color: #64e69b;
+    font-size: 19px;
+}
+
+/* OBSERVAÇÃO */
+
+.sites-cta-final-observacao {
+    color: #a9c3dd;
+    font-size: 12px;
+    line-height: 1.7;
+    margin: 0;
+}
+
+/* ==========================================================
+   PAINEL TECNOLÓGICO
+========================================================== */
+
+.sites-cta-final-visual {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-width: 0;
+    min-height: 340px;
+    padding: 40px 30px;
+    border: 1px solid rgba(145, 202, 255, 0.22);
+    border-radius: 20px;
+    background: linear-gradient(145deg,
+            rgba(255, 255, 255, 0.09),
+            rgba(255, 255, 255, 0.025));
+    box-shadow: 0 25px 55px rgba(0, 0, 0, 0.15);
+    text-align: center;
+}
+
+/* ÍCONE PRINCIPAL */
+
+.sites-cta-final-visual-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 105px;
+    height: 105px;
+    margin-bottom: 28px;
+    border: 1px solid rgba(145, 202, 255, 0.30);
+    border-radius: 24px;
+    background: rgba(70, 168, 255, 0.12);
+    color: #8acbff;
+    font-size: 49px;
+}
+
+/* TEXTO DO PAINEL */
+
+.sites-cta-final-visual-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.sites-cta-final-visual-texto span {
+    color: #9bd0ff;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 2px;
+}
+
+.sites-cta-final-visual-texto strong {
+    max-width: 290px;
+    color: #ffffff;
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 1.4;
+}
+
+/* DETALHE INFERIOR */
+
+.sites-cta-final-visual-detalhe {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 9px;
+    margin-top: 30px;
+    padding: 11px 16px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, 0.07);
+    color: #d8e5f5;
+    font-size: 12px;
+}
+
+.sites-cta-final-visual-detalhe i {
+    color: #74c5ff;
+}
+
+/* ==========================================================
+   RESPONSIVIDADE
+========================================================== */
+
+@media (max-width: 992px) {
+
+    .sites-cta-final-layout {
+        grid-template-columns: 1fr;
+        gap: 45px;
+    }
+
+    .sites-cta-final-visual {
+        min-height: 290px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .sites-cta-final {
+        padding: 75px 0;
+    }
+
+    .sites-cta-final-conteudo h2 {
+        font-size: clamp(28px, 7vw, 36px);
+    }
+
+    .sites-cta-final-conteudo>p:not(.sites-cta-final-observacao) {
+        font-size: 14px;
+    }
+
+    .sites-cta-final-acoes {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .sites-cta-final-btn {
+        width: 100%;
+    }
+
+    .sites-cta-final-visual {
+        padding: 35px 22px;
+        min-height: 270px;
+    }
+
+    .sites-cta-final-visual-texto strong {
+        font-size: 22px;
+    }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+    .sites-cta-final-btn {
+        transition: none;
+    }
+
+    .sites-cta-final-btn:hover {
+        transform: none;
+    }
+
+}
+
+/* ==========================================
+   SEPARAÇÃO ENTRE CTA FINAL E RODAPÉ
+========================================== */
+
+main+.footer {
+    border-top: 18px solid #e8f2fc;
+}
