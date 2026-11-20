@@ -852,7 +852,7 @@
    MENU MOBILE RESPONSIVO
 ========================================== */
 
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
 
     header .container {
         position: relative;

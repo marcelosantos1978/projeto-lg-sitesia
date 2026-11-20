@@ -175,16 +175,18 @@ nav a:hover {
 
 }
 
+/* ==========================================
+   HERO — LARGURA EXCLUSIVA
+========================================== */
+
 .hero-container {
-
     display: grid;
-
-    grid-template-columns: 1fr 1fr;
-
-    gap: 70px;
-
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+    gap: 24px;
     align-items: center;
-
+    width: 96%;
+    max-width: 1440px;
+    margin: 0 auto;
 }
 
 .hero-content {
@@ -245,27 +247,131 @@ nav a:hover {
 
 }
 
+
+/* ==========================================
+   HERO — IMAGEM CORPORATIVA
+========================================== */
+
 .hero-image {
-
     display: flex;
-
     justify-content: center;
-
+    align-items: center;
+    width: 100%;
+    min-width: 0;
 }
 
 .hero-image img {
+    display: block;
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
+    animation: none;
+}
 
-    width: 90%;
+/* ==========================================
+   HERO — INDICADORES INSTITUCIONAIS
+========================================== */
 
-    max-width: 620px;
+.hero-highlights {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 18px 24px;
+    margin-top: 32px;
+}
 
-    animation: float 5s ease-in-out infinite;
+.hero-highlights span {
+    display: inline-flex;
+    align-items: center;
+    gap: 9px;
+    font-size: 13px;
+    font-weight: 500;
+    color: #14213d;
+    white-space: nowrap;
+}
+
+.hero-highlights i {
+    color: #087bd3;
+    font-size: 19px;
+    flex-shrink: 0;
+}
+
+/* ==========================================
+    Ajuste para dispositivos móveis 
+========================================== */
+@media (max-width: 768px) {
+
+    /* HERO — espaçamento superior no mobile */
+    #inicio.hero {
+        padding-top: 45px;
+        padding-bottom: 25px;
+    }
+
+    /* HERO — distância entre o selo e o título */
+    #inicio .hero-badge {
+        margin-bottom: 12px;
+    }
+
+    #inicio .hero-content h1 {
+        margin-top: 0;
+    }
+
+    /* HERO — espaçamento entre descrição e botões */
+    #inicio .hero-content>p {
+        margin-bottom: 16px;
+    }
+
+    .hero-highlights {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: nowrap;
+        gap: 14px;
+        width: 100%;
+        margin-top: 24px;
+    }
+
+    .hero-highlights span {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 9px;
+        width: 100%;
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .hero-highlights i {
+        font-size: 17px;
+    }
+
+    /* ==========================================
+  HERO — organização em uma coluna no mobile
+========================================== */
+    .hero-container {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+    }
+
+    .hero-content,
+    .hero-image {
+        min-width: 0;
+    }
+
+    .hero-image img {
+        width: 100%;
+        height: auto;
+        object-fit: contain;
+    }
 
 }
 
-/* ==========================================================
+/* ==========================================
    INDICADORES
-========================================================== */
+========================================== */
 
 .hero-numbers {
 
@@ -369,29 +475,34 @@ nav a:hover {
 
 }
 
-.services h2 {
 
+/* ==========================================
+   APRESENTAÇÃO DA SEÇÃO DE SERVIÇOS
+========================================== */
+
+.services-section-header {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto 60px;
+    text-align: center;
+}
+
+.services-section-header h2 {
     font-size: 42px;
-
     color: var(--secondary);
-
-    margin-bottom: 20px;
-
-    max-width: 700px;
-
+    max-width: 100%;
+    margin: 0 auto 20px;
 }
 
-.section-description {
 
-    max-width: 750px;
-
+.services-section-header .section-description {
+    max-width: 1050px;
+    margin: 0 auto;
     font-size: 18px;
-
     color: var(--gray-500);
-
-    margin-bottom: 60px;
-
+    line-height: 1.8;
 }
+
 
 .services-grid {
 
@@ -513,40 +624,41 @@ nav a:hover {
     gap: 80px;
 }
 
+/* SOBRE A L&G — IMAGEM CORPORATIVA */
 .about-image {
-    min-height: 500px;
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
     position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     overflow: hidden;
-    background: linear-gradient(145deg,
-            var(--primary-dark),
-            var(--primary));
+
+    /* Contorno azul */
+    border: 2px solid rgba(31, 126, 203, 0.40);
+
+    /* Cantos arredondados */
     border-radius: 24px;
-    box-shadow: var(--shadow);
+
+    /* Fundo */
+    background: #e8eef5;
+
+    /* Sombra profissional */
+    box-shadow:
+        0 12px 28px rgba(8, 35, 70, 0.16),
+        0 24px 48px rgba(8, 35, 70, 0.12);
 }
 
-.about-image::before {
-    content: "";
-    width: 330px;
-    height: 330px;
-    position: absolute;
-    top: -90px;
-    right: -90px;
-    background: rgba(255, 255, 255, .08);
-    border-radius: 50%;
-}
+.about-corporate-image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    min-height: 680px;
 
-.about-image::after {
-    content: "";
-    width: 240px;
-    height: 240px;
-    position: absolute;
-    bottom: -80px;
-    left: -80px;
-    border: 35px solid rgba(255, 255, 255, .08);
-    border-radius: 50%;
+    /* Preencher a área da coluna */
+    object-fit: cover;
+    object-position: center;
+
+    /* Acompanhar os cantos do contêiner */
+    border-radius: inherit;
 }
 
 .about-symbol {
@@ -1068,4 +1180,753 @@ header .btn {
 .menu-toggle:focus-visible {
     outline: 3px solid #1877d2;
     outline-offset: 3px;
+}
+
+
+/* Centraliza somente a linha decorativa de Nossos Serviços */
+#servicos .services-section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ==========================================
+   CABEÇALHO - CONTRATOS MENSAIS DE TI
+========================================== */
+
+/* Centraliza a linha decorativa */
+#contratos-ti .services-section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Destaca a etiqueta sobre o fundo azul-claro */
+#contratos-ti .services-section-header .section-badge {
+    background-color: #ffffff;
+    color: #1976c9;
+    border: 1px solid #c5def5;
+    box-shadow: 0 3px 12px rgba(20, 47, 85, 0.06);
+}
+
+
+/* ==========================================
+   CABEÇALHO - DIFERENCIAIS
+========================================== */
+
+#diferenciais .services-section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+/* ==========================================
+   ETIQUETA - POR QUE ESCOLHER A L&G
+========================================== */
+
+#diferenciais .services-section-header .section-badge {
+    background-color: #ffffff;
+    color: #1976c9;
+    border: 1px solid #c5def5;
+    box-shadow: 0 3px 12px rgba(20, 47, 85, 0.06);
+}
+
+
+/* ==========================================
+   CABEÇALHO - COMO TRABALHAMOS
+========================================== */
+
+#processo .services-section-header h2::after {
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* ==========================================
+   PADRONIZAÇÃO DAS ETIQUETAS - L&G
+========================================== */
+
+/* Etiquetas das seções com fundo claro */
+#inicio .section-badge,
+#servicos .section-badge,
+#contratos-ti .section-badge,
+#sobre .section-badge,
+#diferenciais .section-badge,
+#processo .section-badge {
+    border: 1.5px solid #9cc9ee;
+    box-shadow:
+        0 5px 14px rgba(20, 47, 85, 0.16),
+        0 2px 5px rgba(20, 47, 85, 0.08);
+}
+
+/* Etiquetas em seções com fundo azul-claro */
+#contratos-ti .section-badge,
+#diferenciais .section-badge {
+    background: #ffffff;
+    color: #1976c9;
+}
+
+/* Etiqueta da seção Fale com a L&G */
+#contato .section-badge {
+    background: #ffffff;
+    color: #176bb5;
+    border: 1.5px solid #9cc9ee;
+    box-shadow:
+        0 6px 18px rgba(0, 0, 0, 0.25),
+        0 2px 6px rgba(0, 0, 0, 0.12);
+}
+
+
+/* ==========================================
+   ETIQUETA DESDE 2018 - HERO
+========================================== */
+
+#inicio .hero-badge {
+    border: 1.5px solid #9cc9ee;
+    box-shadow:
+        0 5px 14px rgba(20, 47, 85, 0.16),
+        0 2px 5px rgba(20, 47, 85, 0.08);
+}
+
+
+/* ==========================================
+   CARDS - CONTRATOS MENSAIS DE TI
+========================================== */
+
+/* Acabamento dos dois cards */
+#contratos-ti .contract-card-essential,
+#contratos-ti .contract-card-business {
+    border: 1px solid #d8e5f2;
+    border-top: 4px solid transparent;
+    box-shadow: 0 8px 24px rgba(20, 47, 85, 0.09);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* L&G TI Essencial */
+#contratos-ti .contract-card-essential {
+    border-top-color: #1976c9;
+}
+
+#contratos-ti .contract-card-essential>h3:first-of-type {
+    color: #1976c9;
+}
+
+/* Gestão de TI Empresarial */
+#contratos-ti .contract-card-business {
+    border-top-color: #142f55;
+}
+
+#contratos-ti .contract-card-business>h3:first-of-type {
+    color: #142f55;
+}
+
+/* Efeito ao passar o mouse */
+#contratos-ti .contract-card-essential:hover,
+#contratos-ti .contract-card-business:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 14px 32px rgba(20, 47, 85, 0.16);
+}
+
+
+/* ==========================================
+   PROPOSTA PERSONALIZADA - CONTRATOS TI
+========================================== */
+
+#contratos-ti .contract-custom-proposal {
+    background: #eef4fb;
+    border-left: 4px solid #142f55;
+    border-radius: 8px;
+    padding: 18px 20px;
+    margin: 26px 0;
+}
+
+#contratos-ti .contract-custom-label {
+    display: block;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    color: #536b8d;
+    margin-bottom: 12px;
+}
+
+#contratos-ti .contract-custom-title {
+    font-size: 26px;
+    font-weight: 700;
+    line-height: 1.3;
+    color: #142f55;
+    margin-bottom: 6px;
+}
+
+#contratos-ti .contract-custom-description {
+    display: block;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #536b8d;
+}
+
+
+/* ==========================================
+   CABEÇALHOS INTEGRADOS - CONTRATOS TI
+========================================== */
+
+/* Estrutura dos cards */
+#contratos-ti .contract-card-essential,
+#contratos-ti .contract-card-business {
+    overflow: hidden;
+    padding: 0 0 28px;
+    border-top: 0;
+}
+
+/* Espaçamento dos conteúdos abaixo do cabeçalho */
+#contratos-ti .contract-card-essential> :not(.contract-card-header),
+#contratos-ti .contract-card-business> :not(.contract-card-header) {
+    margin-left: 28px;
+    margin-right: 28px;
+}
+
+/* Cabeçalho colorido */
+#contratos-ti .contract-card-header {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+    min-height: 110px;
+    padding: 25px 28px;
+    margin: 0 0 28px;
+}
+
+/* Plano Essencial */
+#contratos-ti .contract-card-essential .contract-card-header {
+    background: linear-gradient(120deg, #176bb5, #2389d4);
+}
+
+/* Plano Empresarial */
+#contratos-ti .contract-card-business .contract-card-header {
+    background: linear-gradient(120deg, #142f55, #24558b);
+}
+
+/* Ícones */
+#contratos-ti .contract-card-header .service-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    width: 58px;
+    height: 58px;
+    margin: 0;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.16);
+    color: #ffffff;
+}
+
+#contratos-ti .contract-card-header .service-icon i {
+    color: #ffffff;
+    font-size: 26px;
+}
+
+/* ==========================================
+                   Títulos
+ ========================================== */
+#contratos-ti .contract-card-header h3.contract-card-title {
+    display: block;
+    width: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    background: transparent;
+    box-shadow: none;
+    border-radius: 0;
+    color: #ffffff;
+    font-size: 23px;
+    font-weight: 700;
+    line-height: 1.3;
+    text-align: left;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    #contratos-ti .contract-card-header {
+        padding: 22px 24px;
+        margin: 0 0 24px;
+        gap: 14px;
+    }
+
+    /* Espaçamento interno dos conteúdos no celular */
+    #contratos-ti .contract-card-essential> :not(.contract-card-header),
+    #contratos-ti .contract-card-business> :not(.contract-card-header) {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    #contratos-ti .contract-card-header .service-icon {
+        width: 48px;
+        height: 48px;
+    }
+
+    #contratos-ti .contract-card-header h3.contract-card-title {
+        font-size: 19px;
+    }
+}
+
+
+/* ==========================================
+   ALINHAMENTO DOS CARDS - CONTRATOS TI
+========================================== */
+
+/* Estrutura vertical dos cards */
+#contratos-ti .contract-card-essential,
+#contratos-ti .contract-card-business {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+/* Descrições iniciais com altura equilibrada */
+#contratos-ti .contract-card-header+p {
+    min-height: 0;
+    margin-bottom: 24px;
+}
+
+/* Destaques sem espaçamento adicional */
+#contratos-ti .contract-price,
+#contratos-ti .contract-custom-proposal {
+    flex-shrink: 0;
+    margin-top: 0;
+}
+
+/* Botões alinhados na base dos cards */
+#contratos-ti .contract-card-essential>a.btn,
+#contratos-ti .contract-card-business>a.btn {
+    margin-top: auto;
+    align-self: flex-start;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+
+    #contratos-ti .contract-card-essential,
+    #contratos-ti .contract-card-business {
+        height: auto;
+    }
+}
+
+
+/* ==========================================
+   CABEÇALHO CENTRALIZADO — SOBRE A L&G
+========================================== */
+
+#sobre .about-content {
+    min-width: 0;
+}
+
+#sobre .about-section-header {
+    width: 100%;
+    margin-bottom: 28px;
+    text-align: center;
+}
+
+#sobre .about-section-header .section-badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+#sobre .about-section-header h2 {
+    position: relative;
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 22px;
+    font-size: 42px;
+    line-height: 1.2;
+    font-weight: 700;
+    text-align: center;
+}
+
+#sobre .about-section-header h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 65px;
+    height: 4px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #1877d2, #65b7ff);
+}
+
+@media (max-width: 768px) {
+    #sobre .about-section-header h2 {
+        font-size: 34px;
+    }
+}
+
+/* ==========================================
+   CONTRATOS DE TI — CORREÇÃO MOBILE
+   Cabeçalhos integrados aos cards
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Cards sem espaçamento externo no cabeçalho */
+    #contratos-ti .contract-card-essential,
+    #contratos-ti .contract-card-business {
+        padding: 0 !important;
+        overflow: hidden;
+        border-radius: 16px;
+    }
+
+    /* Cabeçalho ocupa toda a largura superior */
+    #contratos-ti .contract-card-header {
+        width: 100%;
+        margin: 0 !important;
+        padding: 24px !important;
+        min-height: 100px;
+
+        display: flex;
+        align-items: center;
+        gap: 14px;
+
+        border-radius: 16px 16px 0 0;
+        box-sizing: border-box;
+    }
+
+    /* Conteúdo mantém espaçamento interno */
+    #contratos-ti .contract-card-essential> :not(.contract-card-header),
+    #contratos-ti .contract-card-business> :not(.contract-card-header) {
+        margin-left: 24px;
+        margin-right: 24px;
+    }
+
+    /* Títulos adaptados ao celular */
+    #contratos-ti .contract-card-header .contract-card-title {
+        margin: 0;
+        padding: 0;
+        font-size: 19px;
+        line-height: 1.3;
+    }
+}
+
+/* ==========================================
+   CONTRATOS DE TI — REFINAMENTO MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Distribuição vertical dos conteúdos */
+    #contratos-ti .contract-card-essential,
+    #contratos-ti .contract-card-business {
+        height: auto;
+        padding-bottom: 28px !important;
+    }
+
+    /* Espaçamento dos parágrafos */
+    #contratos-ti .contract-card-essential>p,
+    #contratos-ti .contract-card-business>p {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        line-height: 1.7;
+    }
+
+    /* Primeiro parágrafo após o cabeçalho */
+    #contratos-ti .contract-card-header+p {
+        margin-top: 24px !important;
+    }
+
+    /* Destaques comerciais */
+    #contratos-ti .contract-price,
+    #contratos-ti .contract-custom-proposal {
+        margin-top: 8px;
+        margin-bottom: 20px;
+    }
+
+    /* Botões afastados da borda inferior */
+    #contratos-ti .contract-card-essential>a.btn,
+    #contratos-ti .contract-card-business>a.btn {
+        margin-top: 24px !important;
+        margin-bottom: 0 !important;
+        align-self: flex-start;
+    }
+}
+
+/* ==========================================
+   SOBRE A L&G — CORREÇÃO DA IMAGEM MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    #sobre .about-image {
+        width: 88%;
+        max-width: 340px;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        display: block;
+        margin: 0 auto 28px;
+        padding: 0 !important;
+
+        overflow: hidden;
+        border-radius: 20px;
+    }
+
+    #sobre .about-corporate-image {
+        display: block;
+        width: 100%;
+        height: auto !important;
+        min-height: 0 !important;
+        max-height: none !important;
+
+        object-fit: contain;
+        object-position: center;
+        border-radius: 0;
+    }
+}
+
+/* ==========================================
+   SOBRE A L&G — ESPAÇAMENTO SUPERIOR MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+    #sobre {
+        padding-top: 40px;
+    }
+}
+
+/* ==========================================
+   SOBRE A L&G — DIFERENCIAIS MOBILE
+========================================== */
+
+@media (max-width: 768px) {
+
+    /* Organização dos quatro diferenciais */
+    #sobre .about-features {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 16px;
+        margin-bottom: 26px;
+    }
+
+    /* Alinhamento dos ícones e textos */
+    #sobre .about-feature {
+        display: flex;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    /* Ícones alinhados ao início do texto */
+    #sobre .about-feature i {
+        flex-shrink: 0;
+    }
+
+    /* Melhor legibilidade */
+    #sobre .about-feature span {
+        line-height: 1.6;
+    }
+}
+
+
+/* ==========================================
+   PADRONIZAÇÃO DOS BOTÕES DE AÇÃO
+   DESKTOP E MOBILE
+========================================== */
+
+/* Centralização dos botões das seções */
+#sobre .about-content>a.btn,
+#contratos-ti .contract-card-essential>a.btn,
+#contratos-ti .contract-card-business>a.btn {
+    display: table;
+    width: fit-content;
+    max-width: 100%;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    align-self: center;
+    text-align: center;
+}
+
+/* Preserva a centralização em dispositivos móveis */
+@media (max-width: 768px) {
+
+    #sobre .about-content>a.btn,
+    #contratos-ti .contract-card-essential>a.btn,
+    #contratos-ti .contract-card-business>a.btn {
+        margin-left: auto !important;
+        margin-right: auto !important;
+        align-self: center;
+    }
+}
+
+/* ==========================================
+   NOSSOS SERVIÇOS — LOCALIZAÇÃO NO TÍTULO
+========================================== */
+
+#servicos .services-location {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    #servicos .services-location {
+        white-space: normal;
+    }
+}
+
+
+/* ==========================================
+   HERO — PADRONIZAÇÃO DO CABEÇALHO
+   DESKTOP E MOBILE
+========================================== */
+
+/* Centralização do conteúdo da coluna esquerda */
+#inicio .hero-content {
+    text-align: center;
+}
+
+/* Título principal */
+#inicio .hero-content h1 {
+    text-align: center;
+}
+
+/* Linha decorativa azul */
+#inicio .hero-title-line {
+    width: 64px;
+    height: 4px;
+    margin: 24px auto 28px;
+    background: linear-gradient(90deg,
+            #1676d5,
+            #54b5ff);
+    border-radius: 4px;
+}
+
+/* Texto de apresentação */
+#inicio .hero-content>p {
+    text-align: center;
+}
+
+/* Botões centralizados */
+#inicio .hero-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+/* Ajuste para smartphones */
+@media (max-width: 768px) {
+    #inicio .hero-title-line {
+        margin: 20px auto 24px;
+    }
+
+    #inicio .hero-buttons {
+        gap: 12px;
+        margin-top: 20px;
+    }
+
+}
+
+
+/* ==========================================
+   HERO — COMPOSIÇÃO INTEGRADA NO DESKTOP
+========================================== */
+
+@media (min-width: 1201px) {
+
+    #inicio.hero {
+        padding: 0;
+    }
+
+    #inicio .hero-container {
+        display: grid;
+        grid-template-columns: minmax(0, 52%) minmax(0, 48%);
+        align-items: stretch;
+        width: 100%;
+        max-width: none;
+        margin: 0;
+        gap: 0;
+    }
+
+    #inicio .hero-content {
+        width: 100%;
+        max-width: 720px;
+        margin: 0 auto;
+        padding: 90px 30px;
+        box-sizing: border-box;
+    }
+
+    #inicio .hero-image {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        min-width: 0;
+        overflow: hidden;
+
+    }
+
+    #inicio .hero-image::before {
+        content: "";
+        position: absolute;
+        inset: 0;
+        background: rgba(255, 255, 255, 0.12);
+        pointer-events: none;
+    }
+
+    #inicio .hero-image picture {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+
+    #inicio .hero-image img {
+        position: relative;
+        z-index: 1;
+        display: block;
+        width: 100%;
+        height: 100%;
+        max-width: none;
+        object-fit: contain;
+        border-radius: 0;
+    }
+}
+
+
+/* ==========================================
+   HERO — IMAGEM INSTITUCIONAL SEM HOVER
+========================================== */
+
+#inicio .hero-image,
+#inicio .hero-image img,
+#inicio .hero-image:hover,
+#inicio .hero-image:hover img {
+    transform: none;
+    box-shadow: none;
+    filter: none;
+    transition: none;
+}
+
+/* ==========================================
+   HERO — INTEGRAÇÃO SUAVE DO DEGRADÊ
+========================================== */
+
+@media (min-width: 1201px) {
+
+    #inicio .hero-image {
+        position: relative;
+    }
+
+    #inicio .hero-image::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        width: 22%;
+        z-index: 2;
+
+        background: linear-gradient(to right,
+                #f5f7fa 0%,
+                rgba(245, 247, 250, 0.65) 35%,
+                rgba(245, 247, 250, 0) 100%);
+
+        pointer-events: none;
+    }
 }

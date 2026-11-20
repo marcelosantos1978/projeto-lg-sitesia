@@ -159,6 +159,8 @@
                     Suporte e Gestão de TI para Empresas em Campo Grande
                 </h1>
 
+                <div class="hero-title-line" aria-hidden="true"></div>
+
                 <p>
                     A L&G Tecnologia oferece suporte técnico empresarial, gestão de TI e contratos mensais de manutenção
                     preventiva e corretiva em Campo Grande e Mato Grosso do Sul. Administramos redes, servidores,
@@ -179,21 +181,20 @@
 
                 </div>
 
-
                 <div class="hero-highlights">
 
                     <span>
-                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-calendar-days"></i>
                         Desde 2018
                     </span>
 
                     <span>
-                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-location-dot"></i>
                         Atendimento em todo MS
                     </span>
 
                     <span>
-                        <i class="fa-solid fa-check"></i>
+                        <i class="fa-solid fa-building"></i>
                         Soluções para empresas
                     </span>
 
@@ -202,9 +203,11 @@
             </div>
 
             <div class="hero-image">
+                <picture>
+                    <source media="(min-width: 1201px)" srcset="images/hero/hero-lg-desktop.webp">
 
-                <img src="images/hero/hero-lg.webp" alt="L&G Tecnologia">
-
+                    <img src="images/hero/hero-lg.webp" alt="L&G Tecnologia">
+                </picture>
             </div>
 
         </div>
@@ -220,22 +223,29 @@
 
         <div class="container">
 
-            <span class="section-badge">
-                NOSSOS SERVIÇOS
-            </span>
+            <!-- APRESENTAÇÃO DA SEÇÃO DE SERVIÇOS -->
+            <div class="services-section-header">
 
-            <h2>
-                Soluções de TI para Empresas em Campo Grande/MS
-            </h2>
+                <span class="section-badge">
+                    NOSSOS SERVIÇOS
+                </span>
 
-            <p class="section-description">
-                Oferecemos suporte técnico empresarial, gestão de TI,
-                manutenção de computadores, administração de redes e servidores,
-                segurança da informação e infraestrutura tecnológica.
-                Atuamos com atendimentos pontuais e contratos de suporte contínuo,
-                proporcionando mais segurança, estabilidade e produtividade
-                para sua empresa.
-            </p>
+                <h2>
+                    Soluções de TI para Empresas em
+                    <span class="services-location">Campo Grande</span>
+                    e todo Mato Grosso do Sul
+                </h2>
+
+                <p class="section-description">
+                    Oferecemos suporte técnico empresarial, gestão de TI,
+                    manutenção de computadores, administração de redes e servidores,
+                    segurança da informação e infraestrutura tecnológica.
+                    Atuamos com atendimentos pontuais e contratos de suporte contínuo,
+                    proporcionando mais segurança, estabilidade e produtividade
+                    para sua empresa.
+                </p>
+
+            </div>
 
             <div class="services-grid">
 
@@ -377,32 +387,39 @@
 
         <div class="container">
 
-            <span class="section-badge">
-                CONTRATOS MENSAIS DE TI
-            </span>
 
-            <h2>
-                Soluções de TI para cada fase da sua empresa
-            </h2>
+            <!-- APRESENTAÇÃO DA SEÇÃO DE CONTRATOS MENSAIS -->
+            <div class="services-section-header">
 
-            <p class="section-description">
-                Conte com suporte técnico especializado e acompanhamento
-                contínuo para manter sua empresa segura, organizada e
-                preparada para crescer. Conheça nossas modalidades de
-                contratos mensais de TI em Campo Grande/MS.
-            </p>
+                <span class="section-badge">
+                    CONTRATOS MENSAIS DE TI
+                </span>
+
+                <h2>
+                    Soluções de TI para cada fase da sua empresa
+                </h2>
+
+                <p class="section-description">
+                    Conte com suporte técnico especializado e acompanhamento
+                    contínuo para manter sua empresa segura, organizada e
+                    preparada para crescer. Conheça nossas modalidades de
+                    contratos mensais de TI em Campo Grande/MS.
+                </p>
+
+            </div>
 
             <div class="services-grid contracts-grid">
 
                 <!-- L&G TI ESSENCIAL -->
 
-                <div class="service-card">
+                <div class="service-card contract-card-essential">
 
-                    <div class="service-icon">
-                        <i class="fas fa-desktop"></i>
+                    <div class="contract-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-desktop"></i>
+                        </div>
+                        <h3 class="contract-card-title">L&G TI Essencial</h3>
                     </div>
-
-                    <h3>L&G TI Essencial</h3>
 
                     <p>
                         Programa de estruturação, manutenção e suporte
@@ -441,8 +458,7 @@
                         </small>
                     </p>
 
-                    <a href="solicitar-atendimento.html?servico=contrato_mensal_ti&plano=essencial" class="btn"
-                        style="display: inline-block; margin-top: 18px;">
+                    <a href="solicitar-atendimento.html?servico=contrato_mensal_ti&plano=essencial" class="btn">
                         Solicitar Proposta
                     </a>
 
@@ -450,14 +466,17 @@
                 </div>
 
                 <!-- GESTÃO DE TI EMPRESARIAL -->
+                <div class="service-card contract-card-business">
 
-                <div class="service-card">
+                    <div class="contract-card-header">
+                        <div class="service-icon">
+                            <i class="fas fa-server"></i>
+                        </div>
 
-                    <div class="service-icon">
-                        <i class="fas fa-server"></i>
+                        <h3 class="contract-card-title">
+                            Gestão de TI Empresarial
+                        </h3>
                     </div>
-
-                    <h3>Gestão de TI Empresarial</h3>
 
                     <p>
                         Contratos personalizados de suporte e
@@ -466,7 +485,24 @@
                         de maior porte ou complexidade.
                     </p>
 
-                    <h3>Proposta Personalizada</h3>
+
+                    <!-- DESTAQUE COMERCIAL - GESTÃO DE TI EMPRESARIAL -->
+                    <div class="contract-custom-proposal">
+
+                        <span class="contract-custom-label">
+                            INVESTIMENTO PERSONALIZADO
+                        </span>
+
+                        <div class="contract-custom-title">
+                            Proposta sob medida
+                        </div>
+
+                        <span class="contract-custom-description">
+                            Conforme a estrutura e as necessidades da sua empresa.
+                        </span>
+
+                    </div>
+
 
                     <p>
                         Administração de servidores, redes,
@@ -489,8 +525,7 @@
                         </small>
                     </p>
 
-                    <a href="solicitar-atendimento.html?servico=contrato_mensal_ti&plano=empresarial" class="btn"
-                        style="display: inline-block; margin-top: 18px;">
+                    <a href="solicitar-atendimento.html?servico=contrato_mensal_ti&plano=empresarial" class="btn">
                         Solicitar Proposta
                     </a>
 
@@ -514,31 +549,23 @@
 
             <div class="about-image">
 
-                <div class="about-image-card">
-
-                    <i class="fa-solid fa-shield-halved"></i>
-
-                    <span>
-                        Tecnologia, segurança e parceria
-                    </span>
-
-                </div>
-
-                <div class="about-symbol">
-                    <i class="fa-solid fa-building"></i>
-                </div>
+                <img src="images/sobre/lg-sobre-corporativo.webp"
+                    alt="L&G Tecnologia: infraestrutura corporativa, suporte técnico e gestão de TI"
+                    class="about-corporate-image" loading="lazy" width="1144" height="1375">
 
             </div>
 
             <div class="about-content">
 
-                <span class="section-badge">
-                    SOBRE A L&G
-                </span>
+                <div class="about-section-header">
+                    <span class="section-badge">
+                        SOBRE A L&G
+                    </span>
 
-                <h2>
-                    Tecnologia sob medida para a realidade da sua empresa.
-                </h2>
+                    <h2>
+                        Tecnologia sob medida para a realidade da sua empresa.
+                    </h2>
+                </div>
 
                 <p class="about-intro">
                     Fundada em 02 de fevereiro de 2018, a L&G Tecnologia
@@ -624,25 +651,27 @@
 
         <div class="container">
 
-            <span class="section-badge">
 
-                POR QUE ESCOLHER A L&G
+            <!-- APRESENTAÇÃO DA SEÇÃO DE DIFERENCIAIS -->
+            <div class="services-section-header">
 
-            </span>
+                <span class="section-badge">
+                    POR QUE ESCOLHER A L&G
+                </span>
 
-            <h2>
+                <h2>
+                    Mais do que suporte técnico. Somos parceiros estratégicos
+                    para a evolução tecnológica da sua empresa.
+                </h2>
 
-                Mais do que suporte técnico.
-                Somos parceiros estratégicos para a evolução tecnológica da sua empresa.
+                <p class="section-description">
+                    Trabalhamos para que a tecnologia seja uma aliada do crescimento
+                    do seu negócio, oferecendo soluções personalizadas,
+                    atendimento próximo e compromisso com resultados.
+                </p>
 
-            </h2>
+            </div>
 
-            <p class="section-description">
-
-                Trabalhamos para que a tecnologia seja uma aliada do crescimento do seu negócio, oferecendo soluções
-                personalizadas, atendimento próximo e compromisso com resultados.
-
-            </p>
 
             <div class="timeline">
 
@@ -796,21 +825,24 @@
 
         <div class="container">
 
-            <span class="section-badge">
-                COMO TRABALHAMOS
-            </span>
+            <!-- APRESENTAÇÃO DA SEÇÃO COMO TRABALHAMOS -->
+            <div class="services-section-header">
 
-            <h2>
-                Um processo simples, transparente e eficiente.
-            </h2>
+                <span class="section-badge">
+                    COMO TRABALHAMOS
+                </span>
 
-            <p class="section-description">
+                <h2>
+                    Um processo simples, transparente e eficiente.
+                </h2>
 
-                Cada projeto é conduzido com planejamento,
-                organização e acompanhamento constante para
-                garantir segurança, desempenho e resultados.
+                <p class="section-description">
+                    Cada projeto é conduzido com planejamento,
+                    organização e acompanhamento constante para
+                    garantir segurança, desempenho e resultados.
+                </p>
 
-            </p>
+            </div>
 
             <div class="process-container">
 
