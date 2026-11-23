@@ -1,0 +1,152 @@
+/* ==========================================
+   L&G TECNOLOGIA — SITES PROFISSIONAIS
+   REFINAMENTO VISUAL DAS SEÇÕES
+========================================== */
+
+/* MODELOS DE SITES */
+.sites-modelos {
+    background: #ffffff;
+    padding-top: 72px;
+    padding-bottom: 78px;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* SOLUÇÕES DIGITAIS */
+.sites-solucoes {
+    background: #e8f0f9;
+    padding-top: 72px;
+    padding-bottom: 78px;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* BENEFÍCIOS */
+.sites-beneficios {
+    background: #ffffff;
+    padding-top: 72px;
+    padding-bottom: 78px;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* ETAPAS DO DESENVOLVIMENTO */
+.sites-etapas {
+    background: #e8f0f9;
+    padding-top: 72px;
+    padding-bottom: 78px;
+}
+
+
+/* ==========================================
+   ETAPA 9.67.11.09
+   LINHA AZUL ABAIXO DOS TÍTULOS
+========================================== */
+
+/* REMOVE AS LINHAS ANTERIORES */
+.sites-modelos .sites-section-heading::before,
+.sites-solucoes .sites-section-heading::before,
+.sites-etapas .sites-section-heading::before,
+.sites-beneficios-intro::before {
+    content: none;
+}
+
+/* LINHA ABAIXO DOS TÍTULOS */
+.sites-modelos .sites-section-heading h2::after,
+.sites-solucoes .sites-section-heading h2::after,
+.sites-etapas .sites-section-heading h2::after,
+.sites-beneficios-intro h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin: 20px auto 0;
+    background: #1877d2;
+    border-radius: 10px;
+}
+
+/* ALINHAMENTO À ESQUERDA NOS BENEFÍCIOS */
+.sites-beneficios-intro h2::after {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+
+/* CARTÕES SOBRE FUNDO AZUL-CLARO */
+.sites-solucoes .sites-solucao-card,
+.sites-etapas .sites-etapa-item {
+    border-color: #d3e1f0;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .sites-modelos,
+    .sites-solucoes,
+    .sites-beneficios,
+    .sites-etapas {
+        padding-top: 50px;
+        padding-bottom: 55px;
+    }
+}
+
+
+/* ==========================================
+   ETAPA 9.67.11.06
+   AJUSTE DE ESPAÇAMENTO E ALINHAMENTO
+========================================== */
+
+/* ESPAÇAMENTO ENTRE AS SEÇÕES */
+.sites-modelos,
+.sites-solucoes,
+.sites-beneficios,
+.sites-etapas {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+/* CABEÇALHOS DAS SEÇÕES */
+.sites-modelos .sites-section-heading,
+.sites-solucoes .sites-section-heading,
+.sites-etapas .sites-section-heading {
+    margin-top: 0;
+}
+
+/* BARRAS AZUIS ALINHADAS COM OS TÍTULOS */
+.sites-modelos .sites-section-heading::before,
+.sites-solucoes .sites-section-heading::before,
+.sites-etapas .sites-section-heading::before {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 20px;
+}
+
+/* AJUSTE PARA DISPOSITIVOS MÓVEIS */
+@media (max-width: 768px) {
+
+    .sites-modelos,
+    .sites-solucoes,
+    .sites-beneficios,
+    .sites-etapas {
+        padding-top: 42px;
+        padding-bottom: 48px;
+    }
+}
+
+/* ==========================================
+   ETAPA 9.67.11.08
+   PADRONIZAÇÃO DAS CORES
+========================================== */
+
+main .sites-modelos {
+    background: #ffffff;
+}
+
+main .sites-solucoes {
+    background: #e8f0f9;
+}
+
+main .sites-beneficios {
+    background: #ffffff;
+}
+
+main .sites-etapas {
+    background: #e8f0f9;
+}

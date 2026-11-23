@@ -1,0 +1,317 @@
+/* ==========================================
+   L&G TECNOLOGIA — CENTRAL DE DOWNLOADS
+========================================== */
+
+.downloads-hero {
+    background: linear-gradient(135deg, #101f35, #183b61);
+    padding: 85px 20px;
+    color: #fff;
+    text-align: center;
+}
+
+.downloads-container {
+    width: min(1180px, 92%);
+    margin: 0 auto;
+}
+
+.downloads-hero-badge {
+    display: inline-block;
+    padding: 9px 18px;
+    margin-bottom: 22px;
+    border-radius: 30px;
+    background: rgba(255, 255, 255, .10);
+    color: #a7d2ff;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.downloads-hero h1 {
+    color: #fff;
+    font-size: clamp(32px, 4vw, 52px);
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.downloads-hero p {
+    max-width: 720px;
+    margin: 0 auto;
+    color: #d8e5f5;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+.downloads-catalogo {
+    padding: 85px 0 100px;
+    background: #f5f8fc;
+}
+
+.downloads-heading {
+    margin-bottom: 35px;
+}
+
+.downloads-heading h2 {
+    color: #102c4d;
+    font-size: clamp(25px, 3vw, 34px);
+    margin: 0 0 12px;
+}
+
+.downloads-heading p {
+    color: #64748b;
+    line-height: 1.8;
+}
+
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 320px), 1fr));
+    gap: 26px;
+}
+
+.downloads-card {
+    display: flex;
+    flex-direction: column;
+    padding: 32px;
+    background: #fff;
+    border: 1px solid #e1eaf4;
+    border-radius: 16px;
+    box-shadow: 0 8px 28px rgba(16, 44, 77, .06);
+    transition: transform .25s, box-shadow .25s;
+}
+
+.downloads-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 14px 35px rgba(16, 44, 77, .12);
+}
+
+.downloads-card-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 22px;
+    border-radius: 14px;
+    background: #e8f3ff;
+    color: #1877d2;
+    font-size: 28px;
+}
+
+.downloads-card-badge {
+    display: inline-block;
+    align-self: flex-start;
+    margin-bottom: 14px;
+    padding: 6px 12px;
+    border-radius: 20px;
+    background: #e8f7ef;
+    color: #18794e;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.downloads-card h3 {
+    margin: 0 0 14px;
+    color: #102c4d;
+    font-size: 24px;
+}
+
+.downloads-card p {
+    margin: 0 0 20px;
+    color: #64748b;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.downloads-card-meta {
+    margin-top: auto;
+    padding-bottom: 22px;
+    color: #64748b;
+    font-size: 12px;
+}
+
+.downloads-card-link {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 22px;
+    background: #1877d2;
+    color: #fff;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.downloads-card-link:hover {
+    background: #1263b1;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .downloads-hero {
+        padding: 65px 18px;
+    }
+
+    .downloads-catalogo {
+        padding: 60px 0;
+    }
+
+    .downloads-card {
+        padding: 25px;
+    }
+}
+
+
+/* ==========================================
+   L&G TECNOLOGIA — CENTRAL DE DOWNLOADS
+   REFINAMENTO VISUAL 9.67.13.02
+========================================== */
+
+/* HERO INSTITUCIONAL COMPACTO */
+.downloads-hero {
+    padding: 48px 20px 55px;
+    background:
+        radial-gradient(ellipse at 50% 0%,
+            rgba(32, 126, 215, 0.22),
+            transparent 65%),
+        linear-gradient(135deg, #0c1c30, #183b61);
+}
+
+.downloads-hero-badge {
+    margin-bottom: 18px;
+}
+
+.downloads-hero h1 {
+    font-size: clamp(30px, 4vw, 44px);
+    margin-bottom: 15px;
+}
+
+.downloads-hero p {
+    max-width: 750px;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* CATÁLOGO */
+.downloads-catalogo {
+    min-height: 420px;
+    padding: 65px 0 80px;
+    background: #e8f0f9;
+    border-top: 1px solid #d3e1f0;
+}
+
+/* CABEÇALHO CENTRALIZADO */
+.downloads-heading {
+    text-align: center;
+    margin-bottom: 38px;
+}
+
+.downloads-heading h2 {
+    margin-bottom: 0;
+    font-size: clamp(26px, 3vw, 36px);
+    line-height: 1.3;
+}
+
+/* LINHA AZUL ABAIXO DO TÍTULO */
+.downloads-heading h2::after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 4px;
+    margin: 20px auto 18px;
+    background: #1877d2;
+    border-radius: 10px;
+}
+
+.downloads-heading p {
+    max-width: 720px;
+    margin: 0 auto;
+    font-size: 14px;
+    line-height: 1.75;
+}
+
+/* GRADE PREPARADA PARA NOVOS SOFTWARES */
+.downloads-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    align-items: stretch;
+}
+
+/* CARTÕES DE SOFTWARE */
+.downloads-card {
+    min-width: 0;
+    padding: 28px;
+    background: #ffffff;
+    border: 1px solid #d3e1f0;
+    border-radius: 16px;
+    box-shadow: 0 8px 25px rgba(16, 44, 77, 0.07);
+}
+
+.downloads-card-icon {
+    width: 58px;
+    height: 58px;
+    margin-bottom: 20px;
+}
+
+.downloads-card h3 {
+    font-size: 21px;
+    margin-bottom: 12px;
+}
+
+.downloads-card p {
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.downloads-card-meta {
+    font-size: 11px;
+    line-height: 1.6;
+}
+
+.downloads-card-link {
+    width: 100%;
+    padding: 13px 18px;
+    transition:
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.downloads-card-link:hover {
+    transform: translateY(-2px);
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+    .downloads-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* CELULARES */
+@media (max-width: 768px) {
+    .downloads-hero {
+        padding: 40px 18px 45px;
+    }
+
+    .downloads-hero h1 {
+        font-size: 30px;
+    }
+
+    .downloads-catalogo {
+        padding: 48px 0 60px;
+    }
+
+    .downloads-heading {
+        margin-bottom: 28px;
+    }
+
+    .downloads-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+    }
+
+    .downloads-card {
+        padding: 24px;
+    }
+}

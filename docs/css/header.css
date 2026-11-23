@@ -1,0 +1,86 @@
+/* ==========================================
+   L&G TECNOLOGIA — CABEÇALHO
+   ETAPA 9.67.14.11
+   VERSÃO CONSOLIDADA
+========================================== */
+
+/* DESKTOP — ACIMA DE 1200PX */
+@media (min-width: 1201px) {
+
+    header .container {
+        width: 96%;
+        max-width: 1440px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 24px;
+    }
+
+    /* LOGOTIPO */
+    header .logo {
+        flex-shrink: 0;
+    }
+
+    header .logo img {
+        width: 230px;
+        height: auto;
+        display: block;
+    }
+
+    /* NAVEGAÇÃO */
+    header nav {
+        flex: 1;
+        min-width: 0;
+    }
+
+    header nav ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-wrap: nowrap;
+        gap: 12px;
+        margin: 0;
+        padding: 0;
+    }
+
+    header nav li {
+        flex-shrink: 0;
+    }
+
+    header nav a {
+        font-size: 16px;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+
+    /* BOTÃO FALE CONOSCO */
+    header .header-contact-btn {
+        flex-shrink: 0;
+        margin-left: 0;
+        padding: 14px 22px;
+        font-size: 14px;
+        white-space: nowrap;
+    }
+
+    /* BOTÃO MOBILE OCULTO NO DESKTOP */
+    header .menu-toggle {
+        display: none;
+    }
+}
+
+/* TABLETS E CELULARES — ATÉ 1200PX */
+@media (max-width: 1200px) {
+
+    header .container {
+        position: relative;
+    }
+
+    header .menu-toggle {
+        display: flex;
+        margin-left: auto;
+    }
+
+    header .header-contact-btn {
+        display: none;
+    }
+}

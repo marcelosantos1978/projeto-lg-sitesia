@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- SEO -->
+    <title>Central de Downloads | L&G Tecnologia</title>
+
+    <meta name="description"
+        content="Baixe gratuitamente ferramentas e utilitários desenvolvidos pela L&G Tecnologia para diagnóstico de computadores, análise de hardware e suporte técnico.">
+
+    <meta name="author" content="L&G Tecnologia">
+
+    <link rel="canonical" href="https://www.legtecnologia.com/downloads.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+
+    <meta property="og:title" content="Central de Downloads | L&G Tecnologia">
+
+    <meta property="og:description"
+        content="Conheça as ferramentas da L&G Tecnologia para diagnóstico de computadores e suporte técnico.">
+
+    <meta property="og:url" content="https://www.legtecnologia.com/downloads.html">
+
+    <meta property="og:image" content="https://www.legtecnologia.com/images/og-lg-tecnologia.jpg">
+
+    <meta property="og:locale" content="pt_BR">
+
+    <meta property="og:site_name" content="L&G Tecnologia">
+
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="images/logo/favicon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME - CARREGAMENTO NÃO BLOQUEANTE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <!-- <link rel="stylesheet" href="css/hero.css"> -->
+    <!-- <link rel="stylesheet" href="css/services.css"> -->
+    <!-- <link rel="stylesheet" href="css/about.css"> -->
+    <!-- <link rel="stylesheet" href="css/advantages.css"> -->
+    <!-- <link rel="stylesheet" href="css/process.css"> -->
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/downloads.css">
+
+
+    <!-- ESTILOS DE SEGURANÇA E ESTRUTURA INICIAL -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* APRESENTAÇÃO COMERCIAL */
+
+        .sites-hero {
+            background: linear-gradient(135deg,
+                    #101f35 0%,
+                    #183b61 100%);
+            padding: 100px 0;
+            color: #ffffff;
+        }
+
+        .sites-hero .sites-container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .sites-hero-content {
+            max-width: 850px;
+        }
+
+        .sites-hero-badge {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #a7d2ff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .sites-hero h1 {
+            color: #ffffff;
+            font-size: clamp(32px, 4vw, 54px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0 24px;
+        }
+
+        .sites-hero h1 span {
+            color: #69baff;
+        }
+
+        .sites-hero p {
+            color: #d8e5f5;
+            font-size: 17px;
+            line-height: 1.85;
+            margin-bottom: 30px;
+        }
+
+        .sites-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .sites-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 24px;
+            border-radius: 8px;
+            background: #1877d2;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .sites-action-btn:hover {
+            background: #2b91e8;
+            color: #ffffff;
+        }
+
+        .sites-action-btn-outline {
+            background: transparent;
+            border: 1px solid #84b7e6;
+        }
+
+        .sites-action-btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ==========================================
+   RESPONSIVIDADE - SITES PROFISSIONAIS
+========================================== */
+
+        @media (max-width: 768px) {
+
+            .sites-hero {
+                padding: 65px 0;
+            }
+
+            .sites-hero p {
+                font-size: 15px;
+            }
+
+            .sites-hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .sites-action-btn {
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="index.html#inicio" class="logo">
+                <img src="images/logo/logo-lg-otimizada.webp" alt="L&G Tecnologia">
+            </a>
+
+            <!-- MENU MOBILE -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- NAVEGAÇÃO -->
+            <nav id="menu-principal">
+
+                <ul>
+                    <li><a href="index.html#inicio">Início</a></li>
+                    <li><a href="index.html#servicos">Serviços</a></li>
+                    <li>
+                        <a href="index.html#contratos-ti">
+                            Contratos Mensais de TI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="sites-profissionais.html" aria-current="page">
+                            Sites
+                        </a>
+                    </li>
+                    <!-- CENTRAL DE DOWNLOADS -->
+                    <li>
+                        <a href="downloads.html" aria-current="page">
+                            Downloads
+                        </a>
+                    </li>
+                    <li><a href="index.html#sobre">Sobre</a></li>
+                    <li><a href="index.html#contato">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- BOTÃO DE CONTATO -->
+            <a href="solicitar-atendimento.html" class="btn header-contact-btn">
+                Fale Conosco
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
+
+
+    <main>
+
+        <!-- APRESENTAÇÃO DA CENTRAL DE DOWNLOADS -->
+        <section class="downloads-hero">
+            <div class="downloads-container">
+
+                <span class="downloads-hero-badge">
+                    SOFTWARES E FERRAMENTAS L&G
+                </span>
+
+                <h1>Central de Downloads</h1>
+
+                <p>
+                    Conheça as ferramentas desenvolvidas pela L&G Tecnologia
+                    para auxiliar na identificação de componentes,
+                    diagnóstico de equipamentos e análise de informações
+                    técnicas. Explore nossas soluções e escolha a ferramenta
+                    ideal para sua necessidade.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- CATÁLOGO DE FERRAMENTAS -->
+        <section class="downloads-catalogo">
+            <div class="downloads-container">
+
+                <div class="downloads-heading">
+                    <h2>Ferramentas disponíveis</h2>
+                    <p>
+                        Soluções desenvolvidas para facilitar tarefas
+                        técnicas e oferecer informações úteis sobre
+                        seus equipamentos.
+                    </p>
+                </div>
+
+                <div class="downloads-grid">
+
+                    <!-- L&G SYSCHECK -->
+                    <article class="downloads-card">
+
+                        <div class="downloads-card-icon">
+                            <i class="fas fa-laptop-medical" aria-hidden="true"></i>
+                        </div>
+
+                        <span class="downloads-card-badge">
+                            VERSÃO PILOTO GRATUITA
+                        </span>
+
+                        <h3>L&G SysCheck</h3>
+
+                        <p>
+                            Ferramenta portátil de diagnóstico de hardware
+                            para computadores Windows. Consulte as
+                            configurações do equipamento, execute testes
+                            e gere relatórios técnicos diretamente no PC.
+                        </p>
+
+                        <div class="downloads-card-meta">
+                            Versão 0.10.12 · Windows x64 · Sem instalação
+                        </div>
+
+                        <a href="downloads/leg-syscheck.html" class="downloads-card-link">
+                            <i class="fas fa-arrow-right" aria-hidden="true"></i>
+                            Conhecer e baixar
+                        </a>
+
+                    </article>
+
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+     RODAPÉ INSTITUCIONAL
+     L&G TECNOLOGIA
+========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- LOGOTIPO E DESCRIÇÃO -->
+
+            <div class="footer-brand">
+
+                <img src="images/logo/logo-lg-contorno.png" alt="L&G Tecnologia" class="footer-logo">
+
+                <p>
+                    Conectando empresas à tecnologia com
+                    soluções inteligentes, seguras e eficientes.
+                </p>
+
+            </div>
+
+            <!-- INFORMAÇÕES DE CONTATO -->
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a href="tel:+5567992825117">
+                    <i class="fa-solid fa-phone"></i>
+                    (67) 99282-5117
+                </a>
+
+                <a href="mailto:suporte@legtecnologia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    suporte@legtecnologia.com
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Campo Grande – MS
+                </span>
+
+            </div>
+
+            <!-- HORÁRIOS DE ATENDIMENTO -->
+
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <div class="footer-schedule">
+
+                    <div class="schedule-row">
+
+                        <strong>Segunda a sexta</strong>
+
+                        <span>
+                            07h30–11h00<br>
+                            13h00–18h00
+                        </span>
+
+                    </div>
+
+                    <div class="schedule-row">
+
+                        <strong>Sábado</strong>
+
+                        <span>
+                            08h00–11h00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- DIREITOS AUTORAIS -->
+
+        <div class="footer-copy">
+
+            <div class="container">
+
+                &copy; <span id="year"></span>
+                <strong>L&amp;G Tecnologia</strong>
+                • Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+     WHATSAPP FLUTUANTE
+========================================== -->
+
+    <a href="https://wa.me/5567992825117?text=Ol%C3%A1%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a L&G Tecnologia pelo WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+
+</html>

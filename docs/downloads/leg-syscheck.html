@@ -1,0 +1,692 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- SEO -->
+    <title>L&G SysCheck — Diagnóstico de Hardware | L&G Tecnologia</title>
+
+    <meta name="description"
+        content="Desenvolvimento de sites profissionais em Campo Grande/MS. Sites responsivos, domínio próprio, hospedagem e e-mail corporativo. Solicite uma proposta à L&G Tecnologia.">
+
+    <meta name="author" content="L&G Tecnologia">
+
+    <link rel="canonical" href="https://www.legtecnologia.com/sites-profissionais.html">
+
+    <!-- OPEN GRAPH -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Sites Profissionais | L&G Tecnologia">
+    <meta property="og:description"
+        content="Sites modernos, domínio próprio, hospedagem e e-mail corporativo para sua empresa.">
+    <meta property="og:url" content="https://www.legtecnologia.com/sites-profissionais.html">
+    <meta property="og:image" content="https://www.legtecnologia.com/images/og-lg-tecnologia.jpg">
+    <meta property="og:locale" content="pt_BR">
+    <meta property="og:site_name" content="L&G Tecnologia">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="image/png" href="../images/logo/favicon.png">
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- FONT AWESOME - CARREGAMENTO NÃO BLOQUEANTE -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        media="print" onload="this.media='all'">
+
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="../css/variables.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <!-- <link rel="stylesheet" href="../css/hero.css"> -->
+    <!-- <link rel="stylesheet" href="../css/services.css"> -->
+    <!-- <link rel="stylesheet" href="../css/about.css"> -->
+    <!-- <link rel="stylesheet" href="../css/advantages.css"> -->
+    <!-- <link rel="stylesheet" href="../css/process.css"> -->
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/animations.css">
+    <link rel="stylesheet" href="../css/downloads.css">
+    <link rel="stylesheet" href="../css/syscheck.css">
+
+    <!-- CSS EXCLUSIVO -->
+    <link rel="stylesheet" href="../css/sites-profissionais.css">
+
+    <!-- ESTILOS DE SEGURANÇA E ESTRUTURA INICIAL -->
+    <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        /* APRESENTAÇÃO COMERCIAL */
+
+        .sites-hero {
+            background: linear-gradient(135deg,
+                    #101f35 0%,
+                    #183b61 100%);
+            padding: 100px 0;
+            color: #ffffff;
+        }
+
+        .sites-hero .sites-container {
+            width: min(1200px, 92%);
+            margin: 0 auto;
+        }
+
+        .sites-hero-content {
+            max-width: 850px;
+        }
+
+        .sites-hero-badge {
+            display: inline-block;
+            padding: 9px 16px;
+            border-radius: 30px;
+            background: rgba(255, 255, 255, 0.1);
+            color: #a7d2ff;
+            font-size: 12px;
+            font-weight: 700;
+            letter-spacing: 1px;
+            margin-bottom: 25px;
+        }
+
+        .sites-hero h1 {
+            color: #ffffff;
+            font-size: clamp(32px, 4vw, 54px);
+            font-weight: 800;
+            line-height: 1.2;
+            margin: 0 0 24px;
+        }
+
+        .sites-hero h1 span {
+            color: #69baff;
+        }
+
+        .sites-hero p {
+            color: #d8e5f5;
+            font-size: 17px;
+            line-height: 1.85;
+            margin-bottom: 30px;
+        }
+
+        .sites-hero-actions {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .sites-action-btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 15px 24px;
+            border-radius: 8px;
+            background: #1877d2;
+            color: #ffffff;
+            font-weight: 600;
+            font-size: 14px;
+            text-decoration: none;
+            transition: background 0.3s ease;
+        }
+
+        .sites-action-btn:hover {
+            background: #2b91e8;
+            color: #ffffff;
+        }
+
+        .sites-action-btn-outline {
+            background: transparent;
+            border: 1px solid #84b7e6;
+        }
+
+        .sites-action-btn-outline:hover {
+            background: rgba(255, 255, 255, 0.1);
+        }
+
+        /* ==========================================
+   RESPONSIVIDADE - SITES PROFISSIONAIS
+========================================== */
+
+        @media (max-width: 768px) {
+
+            .sites-hero {
+                padding: 65px 0;
+            }
+
+            .sites-hero p {
+                font-size: 15px;
+            }
+
+            .sites-hero-actions {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .sites-action-btn {
+                text-align: center;
+            }
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- ==========================================
+         CABEÇALHO
+    =========================================== -->
+
+    <header>
+
+        <div class="container">
+
+            <a href="../index.html#inicio" class="logo">
+                <img src="../images/logo/logo-lg-otimizada.webp" alt="L&G Tecnologia">
+            </a>
+
+            <!-- MENU MOBILE -->
+            <button type="button" class="menu-toggle" aria-label="Abrir menu de navegação" aria-expanded="false"
+                aria-controls="menu-principal">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </button>
+
+            <!-- NAVEGAÇÃO -->
+            <nav id="menu-principal">
+
+                <ul>
+                    <li><a href="../index.html#inicio">Início</a></li>
+                    <li><a href="../index.html#servicos">Serviços</a></li>
+                    <li>
+                        <a href="../index.html#contratos-ti">
+                            Contratos Mensais de TI
+                        </a>
+                    </li>
+                    <li>
+                        <a href="../sites-profissionais.html" aria-current="page">
+                            Sites
+                        </a>
+                    </li>
+                    <!-- CENTRAL DE DOWNLOADS -->
+                    <li>
+                        <a href="../downloads.html">
+                            Downloads
+                        </a>
+                    </li>
+                    <li><a href="../index.html#sobre">Sobre</a></li>
+                    <li><a href="../index.html#contato">Contato</a></li>
+                </ul>
+
+            </nav>
+
+            <!-- BOTÃO DE CONTATO -->
+            <a href="../solicitar-atendimento.html" class="btn header-contact-btn">
+                Fale Conosco
+            </a>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==========================================
+         CONTEÚDO PRINCIPAL
+    =========================================== -->
+
+    <main>
+
+        <!-- HERO COMPACTO — L&G SYSCHECK -->
+        <section class="downloads-hero syscheck-hero">
+            <div class="downloads-container">
+
+                <div class="syscheck-hero-brand">
+                    <img src="../images/downloads/syscheck/leg-syscheck-logo.webp" alt="L&G SysCheck"
+                        class="syscheck-hero-logo">
+                </div>
+
+                <h1>Diagnóstico inteligente para seu computador.</h1>
+
+                <p>
+                    Conheça seu hardware, execute testes e gere relatórios
+                    técnicos com praticidade.
+                </p>
+
+            </div>
+        </section>
+
+        <!-- INFORMAÇÕES DO SOFTWARE -->
+        <section class="syscheck-section">
+
+            <div class="downloads-container">
+
+                <div class="syscheck-intro">
+
+                    <div>
+                        <span class="syscheck-label">
+                            VERSÃO PILOTO GRATUITA
+                        </span>
+
+                        <h2>Diagnóstico técnico de forma simples e prática.</h2>
+
+                        <p>
+                            O L&amp;G SysCheck permite consultar as
+                            principais características do computador,
+                            acompanhar informações de desempenho
+                            e identificar dados importantes
+                            para avaliação técnica do equipamento.
+                        </p>
+
+                        <p>
+                            Desenvolvido para profissionais de TI
+                            e usuários que desejam conhecer melhor
+                            a configuração de seus computadores.
+                        </p>
+
+                        <div class="syscheck-features">
+
+                            <div>
+                                <i class="fa-solid fa-microchip"></i>
+                                Processador e placa-mãe
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-memory"></i>
+                                Memória RAM
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-hard-drive"></i>
+                                Armazenamento
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-network-wired"></i>
+                                Informações de rede
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-gauge-high"></i>
+                                Testes de desempenho e conexão
+                            </div>
+
+                            <div>
+                                <i class="fa-solid fa-file-pdf"></i>
+                                Relatórios técnicos em PDF
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <div class="syscheck-info-card">
+
+                        <div class="syscheck-info-icon">
+                            <i class="fa-solid fa-laptop-medical"></i>
+                        </div>
+
+                        <h3>L&amp;G SysCheck</h3>
+
+                        <p>Ferramenta portátil para Windows</p>
+
+                        <div class="syscheck-info-row">
+                            <span>Versão</span>
+                            <strong>0.10.12</strong>
+                        </div>
+
+                        <div class="syscheck-info-row">
+                            <span>Plataforma</span>
+                            <strong>Windows x64</strong>
+                        </div>
+
+                        <div class="syscheck-info-row">
+                            <span>Instalação</span>
+                            <strong>Não necessária</strong>
+                        </div>
+
+                        <div class="syscheck-info-row">
+                            <span>Licença</span>
+                            <strong>Piloto gratuito</strong>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- GALERIA DE TELAS DO L&G SYSCHECK -->
+        <section class="syscheck-gallery" id="galeria">
+
+            <div class="downloads-container">
+
+                <div class="syscheck-gallery-heading">
+
+                    <span class="syscheck-label">
+                        CONHEÇA O SOFTWARE
+                    </span>
+
+                    <h2>Conheça o L&amp;G SysCheck por dentro.</h2>
+
+                    <p>
+                        Explore as principais telas da ferramenta,
+                        desde a identificação do equipamento até
+                        a geração de relatórios técnicos.
+                    </p>
+
+                </div>
+
+                <div class="syscheck-gallery-grid">
+
+                    <!-- TELA INICIAL -->
+                    <a href="../images/downloads/syscheck/capturas/leg-syscheck-inicial.webp"
+                        class="syscheck-gallery-item">
+
+                        <img src="../images/downloads/syscheck/capturas/leg-syscheck-inicial.webp"
+                            alt="Tela inicial do L&G SysCheck" loading="lazy">
+
+                        <div class="syscheck-gallery-caption">
+                            <h3>Tela Inicial</h3>
+                            <p>Teste de conexão e identificação do cliente.</p>
+                        </div>
+
+                    </a>
+
+                    <!-- DASHBOARD -->
+                    <a href="../images/downloads/syscheck/capturas/leg-syscheck-dashboard.webp"
+                        class="syscheck-gallery-item">
+
+                        <img src="../images/downloads/syscheck/capturas/leg-syscheck-dashboard.webp"
+                            alt="Dashboard do L&G SysCheck" loading="lazy">
+
+                        <div class="syscheck-gallery-caption">
+                            <h3>Dashboard</h3>
+                            <p>Desempenho e saúde dos componentes.</p>
+                        </div>
+
+                    </a>
+
+                    <!-- VISÃO RESUMIDA -->
+                    <a href="../images/downloads/syscheck/capturas/leg-syscheck-resumo.webp"
+                        class="syscheck-gallery-item">
+
+                        <img src="../images/downloads/syscheck/capturas/leg-syscheck-resumo.webp"
+                            alt="Visão resumida do equipamento" loading="lazy">
+
+                        <div class="syscheck-gallery-caption">
+                            <h3>Visão Resumida</h3>
+                            <p>Configurações e identificação do equipamento.</p>
+                        </div>
+
+                    </a>
+
+                    <!-- RELATÓRIO TÉCNICO -->
+                    <a href="../images/downloads/syscheck/capturas/leg-syscheck-relatorio.webp"
+                        class="syscheck-gallery-item">
+
+                        <img src="../images/downloads/syscheck/capturas/leg-syscheck-relatorio.webp"
+                            alt="Exemplo de relatório técnico do SysCheck" loading="lazy">
+
+                        <div class="syscheck-gallery-caption">
+                            <h3>Relatório Técnico</h3>
+                            <p>Exemplo de relatório gerado pelo sistema.</p>
+                        </div>
+
+                    </a>
+
+                </div>
+
+                <p class="syscheck-gallery-note">
+                    Imagens demonstrativas com dados fictícios.
+                    A interface pode apresentar diferenças entre versões.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- VISUALIZADOR DE IMAGENS DO SYSCHECK -->
+        <div class="syscheck-lightbox" id="syscheck-lightbox" role="dialog" aria-modal="true"
+            aria-label="Visualizador de telas do L&G SysCheck" aria-hidden="true" tabindex="-1">
+            <div class="syscheck-lightbox-header">
+                <span id="syscheck-lightbox-title"></span>
+
+                <button type="button" class="syscheck-lightbox-close" id="syscheck-lightbox-close"
+                    aria-label="Fechar imagem">
+                    &times;
+                </button>
+            </div>
+
+            <div class="syscheck-lightbox-content">
+
+                <button type="button" class="syscheck-lightbox-arrow" id="syscheck-lightbox-prev"
+                    aria-label="Imagem anterior">
+                    &#10094;
+                </button>
+
+                <img id="syscheck-lightbox-image" src="" alt="">
+
+                <button type="button" class="syscheck-lightbox-arrow" id="syscheck-lightbox-next"
+                    aria-label="Próxima imagem">
+                    &#10095;
+                </button>
+
+            </div>
+
+            <div class="syscheck-lightbox-counter" id="syscheck-lightbox-counter" aria-live="polite"></div>
+        </div>
+
+
+        <!-- DOWNLOAD -->
+        <section class="syscheck-download" id="baixar">
+
+            <div class="downloads-container">
+
+                <span class="syscheck-label">
+                    EXPERIMENTE O SYSCHECK
+                </span>
+
+                <h2>Baixe a versão piloto gratuitamente.</h2>
+
+                <p>
+                    Execute o L&amp;G SysCheck diretamente no seu
+                    computador, sem necessidade de instalação.
+                    Seus relatórios poderão ser salvos localmente.
+                </p>
+
+                <div class="syscheck-download-actions">
+
+                    <!-- DOWNLOAD L&G SYSCHECK - EXECUTAVEL -->
+                    <a href="https://leg-downloads-api.marcelo-cgr.workers.dev/download/syscheck-exe"
+                        class="syscheck-download-btn">
+                        <i class="fa-solid fa-download"></i>
+                        Baixar EXE
+                    </a>
+
+                    <!-- DOWNLOAD L&G SYSCHECK - ARQUIVO ZIP -->
+                    <a href="https://leg-downloads-api.marcelo-cgr.workers.dev/download/syscheck-zip"
+                        class="syscheck-download-btn syscheck-download-btn-secondary">
+                        <i class="fa-solid fa-file-zipper"></i>
+                        Baixar ZIP
+                    </a>
+
+                </div>
+
+                <p class="syscheck-download-note">
+                    Esta versão piloto ainda não possui assinatura digital.
+                    O Windows poderá apresentar um aviso de segurança
+                    durante a primeira execução.
+                    Execute somente arquivos obtidos de fontes confiáveis.
+                </p>
+
+            </div>
+
+        </section>
+
+        <!-- PARTICIPAÇÃO DOS USUÁRIOS -->
+        <section class="syscheck-feedback">
+
+            <div class="downloads-container">
+
+                <h2>Sua opinião ajuda a melhorar o SysCheck.</h2>
+
+                <p>
+                    Experimente a ferramenta e compartilhe suas
+                    sugestões, dificuldades ou problemas encontrados.
+                    Sua participação é importante para o
+                    aperfeiçoamento das próximas versões.
+                </p>
+
+                <a href="mailto:suporte@legtecnologia.com?subject=Feedback%20L%26G%20SysCheck"
+                    class="syscheck-feedback-link">
+                    <i class="fa-solid fa-envelope"></i>
+                    Enviar sugestão ou relatar um problema
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==========================================
+     RODAPÉ INSTITUCIONAL
+     L&G TECNOLOGIA
+========================================== -->
+
+    <footer class="footer">
+
+        <div class="container footer-grid">
+
+            <!-- LOGOTIPO E DESCRIÇÃO -->
+
+            <div class="footer-brand">
+
+                <img src="../images/logo/logo-lg-contorno.png" alt="L&G Tecnologia" class="footer-logo">
+
+                <p>
+                    Conectando empresas à tecnologia com
+                    soluções inteligentes, seguras e eficientes.
+                </p>
+
+            </div>
+
+            <!-- INFORMAÇÕES DE CONTATO -->
+
+            <div class="footer-column">
+
+                <h3>Contato</h3>
+
+                <a href="tel:+5567992825117">
+                    <i class="fa-solid fa-phone"></i>
+                    (67) 99282-5117
+                </a>
+
+                <a href="mailto:suporte@legtecnologia.com">
+                    <i class="fa-solid fa-envelope"></i>
+                    suporte@legtecnologia.com
+                </a>
+
+                <span>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Campo Grande – MS
+                </span>
+
+            </div>
+
+            <!-- HORÁRIOS DE ATENDIMENTO -->
+
+            <div class="footer-column">
+
+                <h3>Atendimento</h3>
+
+                <div class="footer-schedule">
+
+                    <div class="schedule-row">
+
+                        <strong>Segunda a sexta</strong>
+
+                        <span>
+                            07h30–11h00<br>
+                            13h00–18h00
+                        </span>
+
+                    </div>
+
+                    <div class="schedule-row">
+
+                        <strong>Sábado</strong>
+
+                        <span>
+                            08h00–11h00
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- DIREITOS AUTORAIS -->
+
+        <div class="footer-copy">
+
+            <div class="container">
+
+                &copy; <span id="year"></span>
+                <strong>L&amp;G Tecnologia</strong>
+                • Todos os direitos reservados.
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <!-- ==========================================
+     WHATSAPP FLUTUANTE
+========================================== -->
+
+    <a href="https://wa.me/5567992825117?text=Ol%C3%A1%2C%20visitei%20o%20site%20da%20L%26G%20Tecnologia%20e%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es."
+        class="whatsapp-float" target="_blank" rel="noopener noreferrer"
+        aria-label="Falar com a L&G Tecnologia pelo WhatsApp">
+
+        <i class="fa-brands fa-whatsapp"></i>
+
+    </a>
+
+    <!-- ==========================================
+     JAVASCRIPT
+========================================== -->
+
+    <script src="../js/script.js"></script>
+    <script src="../js/syscheck-gallery.js" defer></script>
+
+</body>
+
+
+</html>
