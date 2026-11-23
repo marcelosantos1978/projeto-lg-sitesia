@@ -99,122 +99,164 @@
    RODAPÉ
 ========================================================== */
 
-.footer{
-    padding:24px 0 12px;
-    background:var(--secondary);
-    color:var(--white);
+.footer {
+    padding: 24px 0 12px;
+    background: var(--secondary);
+    color: var(--white);
 }
 
-.footer-grid{
-    display:grid;
-    grid-template-columns:1.4fr 1fr .8fr;
-    align-items:center;
-    gap:50px;
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 1fr .8fr;
+    align-items: center;
+    gap: 50px;
 }
 
-.footer-brand{
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-    text-align:center;
+.footer-brand {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
-.footer-logo{
-    width:230px;
-    margin-bottom:8px;
+.footer-logo {
+    width: 230px;
+    margin-bottom: 8px;
 }
 
-.footer-brand p{
+.footer-brand p {
 
-    max-width:280px;
-    margin:0;
-    color:#bfcbd8;
-    font-size:14px;
-    line-height:1.6;
+    max-width: 280px;
+    margin: 0;
+    color: #bfcbd8;
+    font-size: 14px;
+    line-height: 1.6;
 
 }
 
-.footer-column{
-    display:flex;
-    flex-direction:column;
-    gap:7px;
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    gap: 7px;
 }
 
-.footer-column h3{
-    margin-bottom:4px;
-    color:var(--white);
-    font-size:16px;
+.footer-column h3 {
+    margin-bottom: 4px;
+    color: var(--white);
+    font-size: 16px;
 }
 
 .footer-column a,
-.footer-column span{
-    display:flex;
-    align-items:center;
-    gap:8px;
-    color:#bfcbd8;
-    font-size:13px;
+.footer-column span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #bfcbd8;
+    font-size: 13px;
 }
 
-.footer-column a:hover{
-    color:var(--white);
+.footer-column a:hover {
+    color: var(--white);
 }
 
-.footer-column i{
-    width:16px;
-    color:var(--primary);
+.footer-column i {
+    width: 16px;
+    color: var(--primary);
 }
 
-.footer-copy{
-    width:90%;
-    max-width:1200px;
-    margin:20px auto 0;
-    border-top:1px solid rgba(255,255,255,.10);
+.footer-copy {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto 0;
+    border-top: 1px solid rgba(255, 255, 255, .10);
 }
 
-.footer-copy .container{
-    width:100%;
-    max-width:none;
-    margin:0;
-    padding-top:14px;
-    text-align:center;
-    color:#98A6B8;
-    font-size:13px;
-    letter-spacing:.3px;
+.footer-copy .container {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding-top: 14px;
+    text-align: center;
+    color: #98A6B8;
+    font-size: 13px;
+    letter-spacing: .3px;
 
 }
 
-.footer-schedule{
-    width:100%;
-    max-width:250px;
-    display:flex;
-    flex-direction:column;
+.footer-schedule {
+    width: 100%;
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
 }
 
-.schedule-row{
-    display:grid;
-    grid-template-columns:1fr auto;
-    gap:20px;
-    align-items:start;
+.schedule-row {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 20px;
+    align-items: start;
 
-    padding:10px 0;
+    padding: 10px 0;
 
-    border-bottom:1px solid rgba(255,255,255,.08);
+    border-bottom: 1px solid rgba(255, 255, 255, .08);
 }
 
-.schedule-row:last-child{
-    border-bottom:none;
+.schedule-row:last-child {
+    border-bottom: none;
 }
 
-.schedule-row strong{
-    color:var(--white);
-    font-size:13px;
-    font-weight:600;
+.schedule-row strong {
+    color: var(--white);
+    font-size: 13px;
+    font-weight: 600;
 }
 
-.schedule-row span{
-    color:#bfcbd8;
-    font-size:13px;
-    line-height:1.65;
-    text-align:right;
-    white-space:nowrap;
+.schedule-row span {
+    color: #bfcbd8;
+    font-size: 13px;
+    line-height: 1.65;
+    text-align: right;
+    white-space: nowrap;
+}
+
+
+
+/* ==========================================
+   ACESSO AO PAINEL ADMINISTRATIVO
+   L&G Tecnologia
+========================================== */
+
+.footer-admin-link {
+    display: inline-flex;
+    width: fit-content;
+    max-width: 100%;
+    flex: 0 0 auto;
+    align-self: flex-start;
+    align-items: center;
+    gap: 6px;
+    margin-top: 12px;
+    padding: 5px 8px;
+    border: 1px solid rgba(255, 255, 255, 0.10);
+    border-radius: 5px;
+    color: #aebed0;
+    font-size: 11px;
+    font-weight: 400;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.footer-admin-link i {
+    font-size: 10px;
+    color: #7da6ce;
+}
+
+.footer-admin-link:hover {
+    color: #ffffff;
+    border-color: rgba(141, 197, 245, 0.35);
+    background: rgba(255, 255, 255, 0.04);
+}
+
+.footer-admin-link:focus-visible {
+    outline: 2px solid #8dc5f5;
+    outline-offset: 3px;
 }
