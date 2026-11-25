@@ -1,42 +1,116 @@
 /* ==========================================
    L&G TECNOLOGIA — SITES PROFISSIONAIS
    REFINAMENTO VISUAL DAS SEÇÕES
+   ETAPA 9.67.18.01
 ========================================== */
 
-/* MODELOS DE SITES */
-.sites-modelos {
-    background: #ffffff;
-    padding-top: 72px;
-    padding-bottom: 78px;
-    border-bottom: 1px solid #d3e1f0;
+
+/* ==========================================
+   HERO — ALINHAMENTO CENTRALIZADO
+========================================== */
+
+.sites-hero .sites-container {
+    text-align: center;
 }
 
-/* SOLUÇÕES DIGITAIS */
-.sites-solucoes {
-    background: #e8f0f9;
-    padding-top: 72px;
-    padding-bottom: 78px;
-    border-bottom: 1px solid #d3e1f0;
+.sites-hero-content {
+    width: 100%;
+    max-width: 1100px;
+    margin-inline: auto;
+    text-align: center;
 }
 
-/* BENEFÍCIOS */
-.sites-beneficios {
-    background: #ffffff;
-    padding-top: 72px;
-    padding-bottom: 78px;
-    border-bottom: 1px solid #d3e1f0;
+.sites-hero h1 {
+    max-width: 1050px;
+    margin-inline: auto;
+    text-align: center;
 }
 
-/* ETAPAS DO DESENVOLVIMENTO */
-.sites-etapas {
-    background: #e8f0f9;
-    padding-top: 72px;
-    padding-bottom: 78px;
+.sites-hero p {
+    max-width: 950px;
+    margin-inline: auto;
+    text-align: center;
+}
+
+.sites-hero-actions {
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 
 /* ==========================================
-   ETAPA 9.67.11.09
+   CORES E ESPAÇAMENTOS DAS SEÇÕES
+========================================== */
+
+/* MODELOS DE SITES */
+main .sites-modelos {
+    background: #ffffff;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* SOLUÇÕES DIGITAIS */
+main .sites-solucoes {
+    background: #e8f0f9;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* BENEFÍCIOS */
+main .sites-beneficios {
+    background: #ffffff;
+    border-bottom: 1px solid #d3e1f0;
+}
+
+/* ETAPAS DO DESENVOLVIMENTO */
+main .sites-etapas {
+    background: #e8f0f9;
+}
+
+/* ESPAÇAMENTO PADRONIZADO */
+.sites-modelos,
+.sites-solucoes,
+.sites-beneficios,
+.sites-etapas {
+    padding-top: 55px;
+    padding-bottom: 60px;
+}
+
+
+/* ==========================================
+   CABEÇALHOS CENTRALIZADOS
+========================================== */
+
+.sites-modelos .sites-section-heading,
+.sites-solucoes .sites-section-heading,
+.sites-etapas .sites-section-heading,
+.sites-beneficios-intro {
+    width: 100%;
+    max-width: 1100px;
+    margin-top: 0;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* TÍTULOS DAS SEÇÕES */
+.sites-section-heading h2,
+.sites-beneficios-intro h2 {
+    max-width: 1050px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+/* TEXTOS DESCRITIVOS */
+.sites-section-heading p,
+.sites-beneficios-intro p {
+    max-width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+/* ==========================================
    LINHA AZUL ABAIXO DOS TÍTULOS
 ========================================== */
 
@@ -48,7 +122,7 @@
     content: none;
 }
 
-/* LINHA ABAIXO DOS TÍTULOS */
+/* LINHA AZUL CENTRALIZADA */
 .sites-modelos .sites-section-heading h2::after,
 .sites-solucoes .sites-section-heading h2::after,
 .sites-etapas .sites-section-heading h2::after,
@@ -62,63 +136,21 @@
     border-radius: 10px;
 }
 
-/* ALINHAMENTO À ESQUERDA NOS BENEFÍCIOS */
-.sites-beneficios-intro h2::after {
-    margin-left: 0;
-    margin-right: 0;
-}
 
+/* ==========================================
+   CARTÕES SOBRE FUNDO AZUL-CLARO
+========================================== */
 
-/* CARTÕES SOBRE FUNDO AZUL-CLARO */
 .sites-solucoes .sites-solucao-card,
 .sites-etapas .sites-etapa-item {
     border-color: #d3e1f0;
 }
 
-/* RESPONSIVIDADE */
-@media (max-width: 768px) {
-
-    .sites-modelos,
-    .sites-solucoes,
-    .sites-beneficios,
-    .sites-etapas {
-        padding-top: 50px;
-        padding-bottom: 55px;
-    }
-}
-
 
 /* ==========================================
-   ETAPA 9.67.11.06
-   AJUSTE DE ESPAÇAMENTO E ALINHAMENTO
+   RESPONSIVIDADE
 ========================================== */
 
-/* ESPAÇAMENTO ENTRE AS SEÇÕES */
-.sites-modelos,
-.sites-solucoes,
-.sites-beneficios,
-.sites-etapas {
-    padding-top: 55px;
-    padding-bottom: 60px;
-}
-
-/* CABEÇALHOS DAS SEÇÕES */
-.sites-modelos .sites-section-heading,
-.sites-solucoes .sites-section-heading,
-.sites-etapas .sites-section-heading {
-    margin-top: 0;
-}
-
-/* BARRAS AZUIS ALINHADAS COM OS TÍTULOS */
-.sites-modelos .sites-section-heading::before,
-.sites-solucoes .sites-section-heading::before,
-.sites-etapas .sites-section-heading::before {
-    margin-left: 0;
-    margin-right: 0;
-    margin-bottom: 20px;
-}
-
-/* AJUSTE PARA DISPOSITIVOS MÓVEIS */
 @media (max-width: 768px) {
 
     .sites-modelos,
@@ -128,25 +160,212 @@
         padding-top: 42px;
         padding-bottom: 48px;
     }
+
+    .sites-hero-content,
+    .sites-section-heading,
+    .sites-beneficios-intro {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .sites-hero h1,
+    .sites-hero p,
+    .sites-section-heading h2,
+    .sites-section-heading p,
+    .sites-beneficios-intro h2,
+    .sites-beneficios-intro p {
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .sites-hero-actions {
+        justify-content: center;
+    }
 }
+
 
 /* ==========================================
-   ETAPA 9.67.11.08
-   PADRONIZAÇÃO DAS CORES
+   ETAPA 9.67.18.02
+   HERO COMPACTO E CENTRALIZADO
 ========================================== */
 
-main .sites-modelos {
-    background: #ffffff;
+.sites-hero {
+    min-height: auto;
+    height: auto;
+    padding-top: 48px;
+    padding-bottom: 48px;
 }
 
-main .sites-solucoes {
-    background: #e8f0f9;
+.sites-hero-content {
+    width: 100%;
+    max-width: 1200px;
+    margin-inline: auto;
+    text-align: center;
 }
 
-main .sites-beneficios {
-    background: #ffffff;
+/* TÍTULO PRINCIPAL */
+.sites-hero h1 {
+    max-width: 1100px;
+    font-size: clamp(30px, 3.2vw, 46px);
+    line-height: 1.22;
+    margin: 20px auto 18px;
+    text-align: center;
+    text-wrap: balance;
 }
 
-main .sites-etapas {
-    background: #e8f0f9;
+/* TEXTO DESCRITIVO */
+.sites-hero p {
+    max-width: 1050px;
+    font-size: 16px;
+    line-height: 1.75;
+    margin: 0 auto 24px;
+    text-align: center;
+}
+
+/* BOTÕES */
+.sites-hero-actions {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 14px;
+    margin-top: 24px;
+}
+
+/* TABLETS */
+@media (max-width: 1024px) {
+
+    .sites-hero {
+        padding-top: 40px;
+        padding-bottom: 40px;
+    }
+
+    .sites-hero h1 {
+        font-size: 36px;
+    }
+}
+
+/* DISPOSITIVOS MÓVEIS */
+@media (max-width: 768px) {
+
+    .sites-hero {
+        padding-top: 32px;
+        padding-bottom: 36px;
+    }
+
+    .sites-hero h1 {
+        font-size: 28px;
+        line-height: 1.3;
+        margin-top: 16px;
+        margin-bottom: 16px;
+    }
+
+    .sites-hero p {
+        font-size: 14px;
+        line-height: 1.65;
+    }
+
+    .sites-hero-actions {
+        margin-top: 20px;
+        gap: 12px;
+    }
+}
+
+
+/* ==========================================
+   ETAPA 9.67.18.03
+   REFINAMENTO FINAL DE PROPORÇÕES
+========================================== */
+
+/* HERO MAIS COMPACTO */
+.sites-hero {
+    padding-top: 36px;
+    padding-bottom: 36px;
+}
+
+.sites-hero-content {
+    max-width: 1250px;
+}
+
+/* TÍTULO PRINCIPAL */
+.sites-hero h1 {
+    max-width: 1150px;
+    font-size: clamp(28px, 2.8vw, 42px);
+    line-height: 1.25;
+    margin-top: 12px;
+    margin-bottom: 16px;
+    text-wrap: balance;
+}
+
+/* TEXTO DESCRITIVO */
+.sites-hero p {
+    max-width: 1100px;
+    font-size: 15px;
+    line-height: 1.75;
+    margin-bottom: 18px;
+}
+
+/* BOTÕES */
+.sites-hero-actions {
+    margin-top: 18px;
+    gap: 14px;
+}
+
+/* ESPAÇAMENTO ENTRE AS SEÇÕES */
+.sites-modelos,
+.sites-solucoes,
+.sites-beneficios,
+.sites-etapas {
+    padding-top: 40px;
+    padding-bottom: 50px;
+}
+
+/* CABEÇALHOS DAS SEÇÕES */
+.sites-section-heading {
+    max-width: 1200px;
+    margin-top: 0;
+}
+
+/* TÍTULOS SECUNDÁRIOS */
+.sites-section-heading h2,
+.sites-beneficios-intro h2 {
+    max-width: 1200px;
+    font-size: clamp(26px, 2.5vw, 38px);
+    line-height: 1.3;
+    text-wrap: balance;
+}
+
+/* TEXTOS SECUNDÁRIOS */
+.sites-section-heading p {
+    max-width: 1100px;
+    line-height: 1.75;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 768px) {
+
+    .sites-hero {
+        padding-top: 30px;
+        padding-bottom: 32px;
+    }
+
+    .sites-hero h1 {
+        font-size: 28px;
+    }
+
+    .sites-hero p {
+        font-size: 14px;
+    }
+
+    .sites-modelos,
+    .sites-solucoes,
+    .sites-beneficios,
+    .sites-etapas {
+        padding-top: 32px;
+        padding-bottom: 40px;
+    }
+
+    .sites-section-heading h2,
+    .sites-beneficios-intro h2 {
+        font-size: 26px;
+    }
 }
